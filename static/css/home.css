@@ -1,0 +1,11 @@
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+body {
+    margin: 0 auto;
+    background-color: darkgreen;
+    border-radius: 5px;
+    background-color: #222;
+}

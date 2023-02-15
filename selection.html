@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection</title>
+    <link rel="stylesheet" href="static/css/chat.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+
+<body>
+    <div class="chat-bar-opening">
+        hi
+        <div class="head-start">
+            <div class="mainte">
+       <div class="intres">Intrested   :</div>     
+       <div class="notint">Average Intrested :</div></div>
+        <div class="headlines">
+            <b> Your Results are </b>
+            <div>
+                <a></a>    <p class="dep" id="result">Departments   </p>
+            </div>
+            <a href="nlp.html" style="text-decoration: none;color: #0d0b0b;font-size: 34px;">Let's Start 
+                <i id="chat-icon" style="color: #060505;" class="fa fa-hand-o-right"></i>
+            </a>
+        </div> 
+    </div>
+</body>
+<!-- <script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script> -->
+<script type="text/javascript">
+
+   
+    const urlParams = new URLSearchParams(window.location.search);
+    const greetingvalue=urlParams.get('greeting');
+    console.log(greetingvalue);
+    console.log("select");
+  
+document.getElementById("result").innerHTML=greetingvalue;
+</script>
+
+
+</html>
