@@ -10,7 +10,7 @@ function getBotResponse(input) {
         return "rock";
     }else if(input=="Let's start"){
 return(
-    //https://png.pngtree.com/png-clipart/20220414/ourmid/pngtree-graduate-student-girl-with-book-png-image_4543090.png
+    
     "<img src='https://cdn-icons-png.flaticon.com/512/5894/5894324.png'  style='height: 40px; width: 40px;border-radius: 2px;margin-left: 10px;margin-top: 5px;'/>"
     +"<i class='engg'  onclick='engg()'>Engineering</i>"+"<br/>"+"<br/>"+
     "<img src='https://static-00.iconduck.com/assets.00/student-emoji-460x512-m27mglk6.png'  style='height: 40px; width: 35px;border-radius: 2px;margin-left: 10px;margin-top: 5px;'/>"
@@ -25,8 +25,13 @@ return(
         var docy=nlp(input)
         return ( docy.values().toOrdinal().out('text') );
     }
-    if(input.includes("hi")){
-        return "hello there, what's up ?"
+    if(input.includes("hi") || input.includes("hey")){
+   
+    const arr=[{name:"Nice to meet you",id:0},{name:"hi solluga bro",id:1},{name:"hey what can i do for you",id:2},{name:"hello sir ,pls to meet you",id:3},{name:"yep, whatsup",id:4}];
+    const rob=Math.floor( Math.random()*4.14);
+    const fins=arr.filter(a=>a.id==rob)
+    
+        return (  fins.map((a)=>a.name)  )
     }else if(input.includes("dada")){
         return "I'm not your dada bro !!!"
     } else  if(input.includes("hello")){
@@ -54,36 +59,36 @@ const courseLink = `<a href='${course}'>${course}</a>`;
     }
     else if(input=="Assesment Starts Engineering!!!"){
         return(
-        '1.<a class="mech" >You are embedded domain person and your friend is having problem with solving technical code. Will you help him? </a>'+'<input class="check1" id="check1" onClick={test1()} type="checkbox" value=0 />  ' +'<br/>'
-        +'2.<a class="mech">Tiny thinks are cute right. Do think micro things has more capability?</a>'                +'<input class="check1" id="check2" onClick={test2()} type="checkbox"  value=0  />'+'<br/>'
-        +'3.<a class="mech">Childhood is not complete without mobile games. Do you like connection puzzle game? </a>'+'<t/>'+'<input class="check2" id="check3" onClick={test3()} type="checkbox" value=0   />'+'<br/>'
-        +'4.<a class="mech">You are going on party, will you be more passionate about your look? </a>'+'<t/>'          +'<input class="check" id="check4" onClick={test4()} type="checkbox" value=0 />'+'<br/>'
-        +'5.<a class="mech">Does existing fashion bores you. Will you like to create fashions on your own? </a>'+'<t/>'+'<input class="check" id="check5" onClick={test5()} type="checkbox"value=0  />'+'<br/>'
-        +'6.<a class="mech">.Are you comfortable in working alone that is independently? </a>'+'<t/>'                  +'<input class="check" id="check6" onClick={test6()} type="checkbox" value=0 />'+'<br/>'
-        +'7.<a class="mech">The practical skills are often gained from doing works in outdoor. Are you thinking this is yes? </a>'+'<t/>'+'<input class="check" id="check7" onClick={test7()} type="checkbox" value=0 />'+'<br/>'
-        +'8.<a class="mech">Will you look for perfection? </a>'+'<t/>'                                                 +'<input class="check" id="check8" onClick={test8()} type="checkbox" value=0 />'+'<br/>'
-        +'9.<a class="mech">Can you think instantly according to the current situation? </a>'+'<t/>'                   +'<input class="check" id="check9" onClick={test9()} type="checkbox" value=0 />'+'<br/>'
-        +'10.<a class="mech">In this modern world could you imagine a life without fan or Air conditioner. If suppose they are not working in your place. Will you try to make it by your own?  </a>'+'<t/>'+'<input class="check" id="check10" onClick={test10()} type="checkbox" value=0 />' +'</br/>'
-        +'11.<a class="mech">Do you think answering a theoretical question is easy?</a>'+'<t/>'                        +'<input class="check" id="check11" onClick={test11()} type="checkbox" value=0 />'+'<br/>'
-        +'12.<a class="mech">Think about your closet. Will it be organised? </a>'+'<t/>'                               +'<input class="check" id="check12" onClick={test12()} type="checkbox" value=0 />'+'<br/>'
-+ '13.<a class="mech" >Have you ever checked for the chemical composition that is been printed on the day to day things? </a>'                                                                +'<input class="check1" id="check13" onClick={test13()} type="checkbox" value=0 />  ' +'<br/>'
-+ '14.<a class="mech" >Will you always the expiry date of the items? </a>'                                                                +'<input class="check1" id="check14" onClick={test14()} type="checkbox" value=0 />  ' +'<br/>'
-+ '15.<a class="mech" >You are thinking to bring out something new. Will you be able to achieve it with limited resources? </a>'                                                                +'<input class="check1" id="check15" onClick={test15()} type="checkbox" value=0 />  ' +'<br/>'
-+ '16.<a class="mech" >Are you crazy about bikes? </a>'                                                                +'<input class="check1" id="check16" onClick={test16()} type="checkbox" value=0 />  ' +'<br/>'
-+'17.<a class="mech">Are you afraid of working for hours sitting idle?</a>'                                            +'<input class="check1" id="check17" onClick={test17()} type="checkbox"  value=0  />'+'<br/>'
-+'18.<a class="mech">Have you ever tried Computer aided drawings and designs? </a>'+'<t/>'                             +'<input class="check2" id="check18" onClick={test18()} type="checkbox" value=0   />'+'<br/>'
-+'19.<a class="mech">A potrait is given to you to paint. Wil you like to spend hours in painting it? </a>'+'<t/>'      +'<input class="check"  id="check19" onClick={test19()} type="checkbox" value=0 />'+'<br/>'
-+'20.<a class="mech">.If suppose your computer is stuck, Will you try to rectify it on your own ? </a>'+'<t/>'         +'<input class="check"  id="check20" onClick={test20()} type="checkbox"value=0  />'+'<br/>'
-+'21.<a class="mech">Have you ever though of knowing about the working of Mobile signals? </a>'+'<t/>'                 +'<input class="check"  id="check21" onClick={test21()} type="checkbox" value=0 />'+'<br/>'
-+'22.<a class="mech">Your are working on a technical algorithm for hours and couldnt solve it. Will try it until you finish it? </a>'+'<t/>'                         +'<input class="check" id="check22" onClick={test22()} type="checkbox" value=0 />'+'<br/>'
-+'23.<a class="mech">Consider you are much stronger in the existing technology but it is said that a new technology have been invented. Will you try it? </a>'+'<t/>'+'<input class="check" id="check23" onClick={test23()} type="checkbox" value=0 />'+'<br/>'
-+'24.<a class="mech">Will you spend hours with computers? </a>'+'<t/>'                                                 +'<input class="check"  id="check24" onClick={test24()} type="checkbox" value=0 />'+'<br/>'
-+'25.<a class="mech">We all are more cautionate about the dress.Do you ever thought of the fabrics?  </a>'+'<t/>'      +'<input class="check"  id="check25" onClick={test25()} type="checkbox" value=0 />' +'</br/>'
-+'26.<a class="mech">Do you have any idea of creating new things?</a>'+'<t/>'                                          +'<input class="check"  id="check26" onClick={test26()} type="checkbox" value=0 />'+'<br/>'
-+'27.<a class="mech">Have you combined colours to produce a different shade? </a>'+'<t/>'                              +'<input class="check"  id="check27" onClick={test27()} type="checkbox" value=0 />'+'<br/>'
-+'28.<a class="mech">You have perception about a matter happening around but your friend has a different perspective and different opinion. Will you consider his/her opinion? </a>'+'<t/>'   +'<input class="check" id="check28" onClick={test28()} type="checkbox" value=0 />'+'<br/>'
-+'29.<a class="mech">Friends are the choosen family. Consider that you and your gang are planning for a trip to Manali. Will be the organise the trip? </a>'+'<t/>'                           +'<input class="check" id="check29" onClick={test29()} type="checkbox" value=0 />'+'<br/>'
-+'30.<a class="mech">Can you think and decide a immediate decision in a hectic situation?</a>'+'<t/>'                  +'<input class="check" id="check30" onClick={test30()} type="checkbox" value=0 />'+'<br/>'
+        '<input class="check" id="check1" onClick={test1()} type="checkbox" value=0 />1.<a class="mech" >You are embedded domain person and your friend is having problem with solving technical code. Will you help him?' +'</a>'                                                     +'<br/>'
+        +'<input class="check" id="check2" onClick={test2()} type="checkbox"  value=0  />2.<a class="mech">Tiny thinks are cute right. Do think micro things has more capability?</a>'                                                                                               +'<br/>'
+        +'<input class="check" id="check3" onClick={test3()} type="checkbox" value=0/>3.<a class="mech">Childhood is not complete without mobile games. Do you like connection puzzle game? </a>'                                                                                 +'<br/>'
+        +'<input class="check" id="check4" onClick={test4()} type="checkbox" value=0 />4.<a class="mech">You are going on party, will you be more passionate about your look? </a>'                                                                                                +'<br/>'
+        +'<input class="check" style="top:10px;" id="check5" onClick={test5()} type="checkbox"value=0  />5.<a class="mech">Does existing fashion bores you. Will you like to create fashions on your own? </a>'                                                                                      +'<br/>'
+        +'<input class="check" id="check6" onClick={test6()} type="checkbox" value=0 />6.<a class="mech">Are you comfortable in working alone that is independently? </a>'                                                                                                        +'<br/>'
+        +'<input class="check" id="check7" onClick={test7()} type="checkbox" value=0 />7.<a class="mech">The practical skills are often gained from doing works in outdoor. Are you thinking this is yes? </a>'                                                                    +'<br/>'
+        +'<input class="check" id="check8" onClick={test8()} type="checkbox" value=0 />8.<a class="mech">Will you look for perfection? </a>'                                                                                                                                       +'<br/>'
+        +'<input class="check" id="check9" onClick={test9()} type="checkbox" value=0 />9.<a class="mech">Can you think instantly according to the current situation? </a>'                                                                                                         +'<br/>'
+        +'<input class="check" id="check10" onClick={test10()} type="checkbox" value=0 />10.<a class="mech">In this modern world could you imagine a life without fan or Air conditioner. If suppose they are not working in your place. Will you try to make it by your own?  </a>'  +'</br/>'
+        +'<input class="check" id="check11" onClick={test11()} type="checkbox" value=0 />11.<a class="mech">Do you think answering a theoretical question is easy?</a>'                                                                                                              +'<br/>'
+        +'<input class="check" id="check12" onClick={test12()} type="checkbox" value=0 />12.<a class="mech">Think about your closet. Will it be organised? </a>'                                                                                                                     +'<br/>'
+        + '<input class="check" id="check13" onClick={test13()} type="checkbox" value=0 />13. <a class="mech" >Have you ever checked for the chemical composition that is been printed on the day to day things? </a>'                                                                 +'<br/>'
+        + '<input class="check" id="check14" onClick={test14()} type="checkbox" value=0 />14.<a class="mech" >Will you always the expiry date of the items? </a>'                                                                                                                     +'<br/>'
+        + '<input class="check" id="check15" onClick={test15()} type="checkbox" value=0 />15. <a class="mech" >You are thinking to bring out something new. Will you be able to achieve it with limited resources? </a>'                                                               +'<br/>'
+        + '<input class="check" id="check16" onClick={test16()} type="checkbox" value=0 /> 16.<a class="mech" >Are you crazy about bikes? </a>'                                                                                                                                     +'<br/>'
+        +'<input class="check" id="check17" onClick={test17()} type="checkbox"  value=0  />17.<a class="mech">Are you afraid of working for hours sitting idle?</a>'                                                                                                                   +'<br/>'
+        +'<input class="check" id="check18" onClick={test18()} type="checkbox" value=0   />18.<a class="mech">Have you ever tried Computer aided drawings and designs? </a>'                                                                                                           +'<br/>'
+        +'<input class="check"  id="check19" onClick={test19()} type="checkbox" value=0 />19.<a class="mech">A potrait is given to you to paint. Wil you like to spend hours in painting it? </a>'                                                                                    +'<br/>'
+        +'<input class="check"  id="check20" onClick={test20()} type="checkbox"value=0  />20.<a class="mech">.If suppose your computer is stuck, Will you try to rectify it on your own ? </a>'                                                                                       +'<br/>'
+        +'<input class="check"  id="check21" onClick={test21()} type="checkbox" value=0 />21.<a class="mech">Have you ever though of knowing about the working of Mobile signals? </a>'                                                                                               +'<br/>'
+        +'<input class="check" id="check22" onClick={test22()} type="checkbox" value=0 />22.<a class="mech">Your are working on a technical algorithm for hours and couldnt solve it. Will try it until you finish it? </a>'                                                         +'<br/>'
+        +'<input class="check" id="check23" onClick={test23()} type="checkbox" value=0 />23.<a class="mech">Consider you are much stronger in the existing technology but it is said that a new technology have been invented. Will you try it? </a>'                                +'<br/>'
+        +'<input class="check"  id="check24" onClick={test24()} type="checkbox" value=0 />24.<a class="mech">Will you spend hours with computers? </a>'                                                                                                                               +'<br/>'
+        +'<input class="check"  id="check25" onClick={test25()} type="checkbox" value=0 />25.<a class="mech">We all are more cautionate about the dress.Do you ever thought of the fabrics?  </a>'                                                                                     +'</br/>'
+        +'<input class="check"  id="check26" onClick={test26()} type="checkbox" value=0 />26.<a class="mech">Do you have any idea of creating new things?</a>'                                                                                                                        +'<br/>'
+        +'<input class="check"  id="check27" onClick={test27()} type="checkbox" value=0 />27.<a class="mech">Have you combined colours to produce a different shade? </a>'                                                                                                            +'<br/>'
+        +'<input class="check" id="check28" onClick={test28()} type="checkbox" value=0 />28.<a class="mech">You have perception about a matter happening around but your friend has a different perspective and different opinion. Will you consider his/her opinion? </a>' +'<br/>'
+        +'<input class="check" id="check29" onClick={test29()} type="checkbox" value=0 />29.<a class="mech">Friends are the choosen family. Consider that you and your gang are planning for a trip to Manali. Will be the organise the trip? </a>'+'<t/>'                           +'<br/>'
+        +'<input class="check" id="check30" onClick={test30()} type="checkbox" value=0 />30.<a class="mech">Can you think and decide a immediate decision in a hectic situation?</a>'                                                                                                +'<br/>'
         + '<button class="submit" onClick={tes()}> Submit</button>')
     }else if(input=="mama"){
         return 'yes'

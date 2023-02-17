@@ -95,9 +95,11 @@ font-weight: bolder;
     font-weight: bolder;
 }.check{
     height: 20px;
-    width:80px;
-
-padding-top: 30px;
+    width:40px;
+    margin: 10px 10px 0 0;
+    cursor: pointer;
+  float: inline-end;
+/* top: 20px; */
     background-color: #000;
 }.engg{
     cursor: pointer;
@@ -106,8 +108,9 @@ padding-top: 30px;
 }.mech{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(2, 2, 2);
-    
-    width: 400px;
+    font-size: 13px;
+    width: 1400px;
+    margin-left: 10px;
     font-weight: bolder;
 }
 .check1{
@@ -127,7 +130,7 @@ padding-top: 30px;
   /* display: flex; */
   /* margin-top: 20px; */
     min-height: 500px;
-    width: 50%;
+    width: 60%;
     bottom: 0%;
     background-color: rosybrown;
 }
@@ -138,8 +141,8 @@ padding-top: 30px;
     max-height: 700px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    margin-left: 634.5px;
-    width: 50%;
+    margin-left: 300px;
+    width: 80%;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -154,7 +157,7 @@ padding-top: 30px;
 
 .chat-bar-input-block {
     display: flex;
-    width: 700px;
+    width: 800px;
      /* margin-top: 400px;  */
     float: left;
     box-sizing: border-box;
@@ -258,8 +261,8 @@ padding-top: 30px;
 
 @media screen and (max-width:1600px) {
     .full-chat-block {
-        width: 50%;
-        margin: auto;
+        width: 80%;
+        /* margin: auto; */
         background-color: rosybrown;
         border-radius: 0px;
     }

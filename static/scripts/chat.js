@@ -86,7 +86,7 @@ function getResponse() {
     var doci=nlp(userText)
 
     if (userText == "") {
-        userText = "Let's start";
+        userText= "Let's start";
     }
  
     let userHtml = '<p class="userText"><span>' + doci.text() + '</span></p>';
