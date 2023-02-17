@@ -1,9 +1,11 @@
 // Collapsible
 var coll = document.getElementsByClassName("collapsible");
+
 let res;
 let ghee;
 let boto;
 
+// setup();
 for (let i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function () {
         this.classList.toggle("active");
@@ -18,15 +20,17 @@ for (let i = 0; i < coll.length; i++) {
 
     });
 }
+function gy(){
+   var docx=nlp("hello john");
+   console.log(docx.data())
+}
+gy()
 
 function getTime() {
     let today = new Date();
     hours = today.getHours();
     minutes = today.getMinutes();
     let meridian;
-    // if (hours < 10) {
-    //     hours = "0" + hours ;
-    // }
 
     if (minutes < 10) {
         minutes = "0" + minutes;
@@ -64,8 +68,10 @@ firstBotMessage();
 
 // Retrieves the response
 function getHardResponse(userText) {
-    let botResponse = getBotResponse(userText);
-
+    var docx=nlp(userText)
+    let botResponse = getBotResponse(docx.text());
+  
+console.log(botResponse);
     let botHtml = '<p class="botText"><span onClick={go()}>' + botResponse + "<img src='https://cdn-icons-png.flaticon.com/512/4233/4233830.png'  style='height: 40px; width: 40px;border-radius: 20px;margin-left: 10px;margin-top: 5px;'/>"+'</span></p>';
     let times='<p class="timo">'+ getTime() +'</p>'
     $("#chatbox").append(times + botHtml );
@@ -77,11 +83,13 @@ function getHardResponse(userText) {
 //Gets the text text from the input box and processes it
 function getResponse() {
     let userText = $("#textInput").val().toLowerCase().trim();
+    var doci=nlp(userText)
 
     if (userText == "") {
         userText = "Let's start";
     }
-    let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+ 
+    let userHtml = '<p class="userText"><span>' + doci.text() + '</span></p>';
 
     $("#textInput").val("");
     $("#chatbox").append(userHtml);

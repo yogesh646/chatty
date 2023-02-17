@@ -12,26 +12,32 @@ function getBotResponse(input) {
 return(
     //https://png.pngtree.com/png-clipart/20220414/ourmid/pngtree-graduate-student-girl-with-book-png-image_4543090.png
     "<img src='https://cdn-icons-png.flaticon.com/512/5894/5894324.png'  style='height: 40px; width: 40px;border-radius: 2px;margin-left: 10px;margin-top: 5px;'/>"
-    +"<i class='engg'  onclick='engg()' >Engineering</i>"+"<br/>"+"<br/>"+
+    +"<i class='engg'  onclick='engg()'>Engineering</i>"+"<br/>"+"<br/>"+
     "<img src='https://static-00.iconduck.com/assets.00/student-emoji-460x512-m27mglk6.png'  style='height: 40px; width: 35px;border-radius: 2px;margin-left: 10px;margin-top: 5px;'/>"
    + "<i class='engg'  onclick='arts()'>Arts and Science</i>"
     
 )
+    }if(input=="fifty seven"){
+        var docy=nlp(input)
+        return (docy.values().toNumber().text() + "<br/>"+docy.values().add(3).out('text') + docy.values().toOrdinal().out('text'));
     }
-
+    if(input=="fifty eight"){
+        var docy=nlp(input)
+        return ( docy.values().toOrdinal().out('text') );
+    }
     if(input.includes("hi")){
         return "hello there, what's up ?"
     }else if(input.includes("dada")){
-return "I'm not your dada bro !!!"
+        return "I'm not your dada bro !!!"
     } else  if(input.includes("hello")){
         return "Hi,How may I help you ?"}
         //here to service you to lead for picking your future College Departments
         else  if(input.includes("what is your name")){
             return "I'm Chatty , may i know your name majesty" + "<img src='https://em-content.zobj.net/source/noto-emoji-animations/344/smiling-face-with-smiling-eyes_1f60a.gif'  style='height: 40px; width: 40px;border-radius: 20px;margin-left: 10px;margin-top: 5px;'/>"}
-    else if(input=="sri krishna"){
- let gels="https://www.skct.edu.in/#/"
- const gellinks=`<a href='${gels}'>"Sri Krishna College of Technology"</a>`
- return `Sri Krishna College of Technology : ${gellinks}`
+            else if(input=="sri krishna"){
+            let gels="https://www.skct.edu.in/#/"
+            const gellinks=`<a href='${gels}'>"Sri Krishna College of Technology"</a>`
+            return `Sri Krishna College of Technology : ${gellinks}`
     }
     else if(input=="yogeshwaran"){
         return "Porambokku"
