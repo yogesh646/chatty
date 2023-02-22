@@ -16,24 +16,46 @@
 
 <body>
     <!-- CHAT BAR BLOCK -->
-    <div class="chat-bar-opening">
+    <div class="chat-bar-openings">
         hi
         <div class="head-start">
         <div class="headlines">
-            <b> Welcome to ChatBot World
-                
-    <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i> </b> 
-    <!-- <button></button> -->
-            <p class="movebutton"><a href="next.html" style="text-decoration: none;color: #0d0b0b;font-size: 34px;">Let's Start 
-                <i id="chat-icon" style="color: #060505;" class="fa fa-hand-o-right"></i>
-            </a></p>
+            <b > Welcome to 
+          <a class="pick">PICK MY COURSE</a>   
+              ChatBot World
         </div> 
-        <img src="blows.jpg" style="height: 400px; width: 400px;border-radius: 200px;margin-left: 100px;margin-top: 50px;"/>
+        
+        <div class="nexhead">
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i> </b> 
+           
+                    <input type="text" id="username" class="input-boxs" placeholder="Enter Your Name"/>
+                    <p class="movebuttons" onclick={move()}>
+                        <a  class="let">Let's Start 
+                        <i id="chat-icon" style="color: #060505;" class="fa fa-hand-o-right"></i>
+                        </a>
+                    </p>
+             
+        </div>
+  
+       
         </div> 
+    <a class="imoh">
+        <img  src="blows.jpg" style="height: 400px; width: 400px;border-radius: 200px;margin-left: 100px;margin-top: 50px;"/>
+    </a>    
+
     </div>
 
 </body>
 <script src="https://unpkg.com/compromise@latest/builds/compromise.min.js"></script>
+<script>
+    function move(){
+     let userName=document.getElementById('username').value;
+    console.log(userName);
+window.location.href=`file:///C:/Users/lenovo/ChatBot/next.html?greeting=${userName}`
+
+}
+
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="static/scripts/responses.js"></script>
 <script src="static/scripts/chat.js"></script>

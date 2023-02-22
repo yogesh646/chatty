@@ -55,7 +55,12 @@ if(hours>12){
 
 //வணக்கம்
 function firstBotMessage() {
-            let firstMessage ='<img style="height:100px;width:100px" src="https://www.svgrepo.com/download/312218/folded-hands.svg"/>'+'<br/>'+'<a style="margin-left:10px;font-weight:bolder">WELCOME</a>'
+    // let userName = $("#textInputs").val();
+    // let userName = $("#textInputs").val();
+
+//    console.log(userName);
+    
+            let firstMessage ='<img style="height:100px;width:100px" src="https://www.svgrepo.com/download/312218/folded-hands.svg"/>'+'<br/>'+'<a style="margin-left:10px;font-weight:bolder">WELCOME </a>';
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
