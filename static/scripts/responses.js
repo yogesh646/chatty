@@ -10,6 +10,12 @@ function getBotResponse(input) {
         return "rock";
     }else if(input=='yes'){
 return "Please Type or Suggest or mention the College which I have mentioned above and see your Future Colleges !!! "
+    }else if(input.includes("bye")){
+        return (
+       
+                window.location.href=`file:///C:/Users/lenovo/ChatBot/selection.html?`
+            
+        )
     }
     else if(input=="Let's start"){
 return(
@@ -28,14 +34,38 @@ return(
         var docy=nlp(input)
         return ( docy.values().toOrdinal().out('text') );
     }
+    if(input.includes("who made you") || input.includes("boss")||input.includes("master")){
+   
+        const arr=[{name:"I was made by the end semester project by a team",id:0},{name:"I was made by the end semester project by a team",id:1},{name:"I was made by the end semester project by a team",id:2},{name:"I was made by the end semester project by a team",id:3},{name:"I was made by the end semester project by a team",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
     if(input.includes("hi") || input.includes("hey")){
    
-    const arr=[{name:"Nice to meet you",id:0},{name:"hi solluga bro",id:1},{name:"hey what can i do for you",id:2},{name:"hello sir ,pls to meet you",id:3},{name:"yep, whatsup",id:4}];
+    const arr=[{name:"Hey:-)",id:0},{name:"Hello, thanks for using chatbot",id:1},{name:"Hi ,there  what can I do for you?",id:2},{name:"Hi ,there how can I help ?",id:3},{name:"Hey how can I help you?",id:4}];
     const rob=Math.floor( Math.random()*4.14);
     const fins=arr.filter(a=>a.id==rob)
     
         return (  fins.map((a)=>a.name)  )
-    }else if(input.includes("dada")){
+    } if(input.includes("what help") || input.includes("can you help me") || input.includes("i need some help")){
+   
+        const arr=[{name:"Thank you, for contacting me. Press ENTER to start the assesment.",id:0},{name:"I'm here to help you for your course selection process.Press Enter to start the Assesment",id:1},{name:"I would love to help you,Press Enter to start the Assesment",id:2},{name:"Please Press Enter to start the Assesment",id:3},{name:"Press Enter to start the Assesment",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+        if(input.includes("may i know your name") || input.includes("what is your name")||input.includes("who are you")||input.includes("your name"||input.includes("what's your name"))){
+   
+            const arr=[{name:"I'm Tom",id:0},{name:"I am Tom",id:1},{name:"You can call me Tom",id:2},{name:"Call me Tom",id:3},{name:"Tom",id:4}];
+            const rob=Math.floor( Math.random()*4.14);
+            const fins=arr.filter(a=>a.id==rob)
+            
+                return (  fins.map((a)=>a.name)  )
+            }
+    else if(input.includes("dada")){
         return "I'm not your dada bro !!!"
     } else  if(input.includes("hello")){
         return "Hi,How may I help you ?"}

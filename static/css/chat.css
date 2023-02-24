@@ -73,8 +73,8 @@ font-weight: bolder;
     display: flex;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    width: 750px;
-    margin-left: 700px;
+    width: 1200px;
+    margin-left: 320px;
     height: 40px;
     font-size: 22px;
     background-color: whitesmoke;
@@ -125,7 +125,7 @@ height:40px;
     border-radius: 0px;
     /* width: 1000px; */
     height: 200px;
-    color: #fff;
+    /* color: #fff; */
     /* margin: auto; */
 font-size: 40px;
 /* font-family: 'forte'; */
