@@ -8,7 +8,10 @@ function getBotResponse(input) {
         return "scissors";
     } else if (input == "scissors") {
         return "rock";
-    }else if(input=="Let's start"){
+    }else if(input=='yes'){
+return "Please Type or Suggest or mention the College which I have mentioned above and see your Future Colleges !!! "
+    }
+    else if(input=="Let's start"){
 return(
     
     "<img src='https://cdn-icons-png.flaticon.com/512/5894/5894324.png'  style='height: 40px; width: 40px;border-radius: 2px;margin-left: 10px;margin-top: 5px;'/>"
@@ -44,6 +47,176 @@ return(
             const gellinks=`<a href='${gels}'>"Sri Krishna College of Technology"</a>`
             return `Sri Krishna College of Technology : ${gellinks}`
     }
+    //college sites
+    else if(input.includes("electronics and communication engineering")){
+        let gels="https://www.skct.edu.in/#/"
+        const gellinks=`<a href='${gels}'>"Sri Krishna College of Technology"</a>`
+        return `Sri Krishna College of Technology : ${gellinks}`
+}
+else if(input.includes("aerospace")){
+    let gels="https://hindustanuniv.ac.in/"
+    let gelss="http://www.mitindia.edu/en/"
+    let gelsss="https://www.sathyabama.ac.in/"
+    const gellinks=`<a href='${gels}'>Hindustan Institute of Technology and Science (HITS)</a>`
+    const gellinkss=`<a href='${gelss}'>Madras Institute of Technology (MIT)</a>`
+    const gellinksss=`<a href='${gelsss}'>Sathyabama Institute of Science and Technology, Chennai</a>`
+    return (`Hindustan Institute of Technology and Science (HITS) : ${gellinks}`+'<br/>'+
+    `Madras Institute of Technology (MIT) : ${gellinkss}`+ '<br/>'+
+    `Sathyabama Institute of Science and Technology, Chennai : ${gellinksss}` )
+}
+else if(input.includes("bio-medical")){
+    let gels="https://www.sastra.edu/"
+    let gelss="https://www.psgtech.edu/"
+    let gelsss="https://www.sriramachandra.edu.in/"
+    const gellinks=`<a href='${gels}'>SASTRA University</a>`
+    const gellinkss=`<a href='${gelss}'>PSG College of Technology</a>`
+    const gellinksss=`<a href='${gelsss}'>Sri Ramachandra Institute of Higher Education and Research</a>`
+    return (`SASTRA University : ${gellinks}`+'<br/>'+
+    `PSG College of Technology : ${gellinkss}`+ '<br/>'+
+    `Sri Ramachandra Institute of Higher Education and Research : ${gellinksss}` )
+}
+else if(input.includes("artificial intelligence")){
+    let gels="https://www.srmist.edu.in/"
+    let gelss="https://www.psgtech.edu/"
+    let gelsss="https://www.amrita.edu/"
+    const gellinks=`<a href='${gels}'>SRM Institute of Science and Technology</a>`
+    const gellinkss=`<a href='${gelss}'>PSG College of Technology</a>`
+    const gellinksss=`<a href='${gelsss}'>Amrita Vishwa Vidyapeetham</a>`
+    return (` SRM Institute of Science and Technology: ${gellinks}`+'<br/>'+
+    `PSG College of Technology : ${gellinkss}`+ '<br/>'+
+    `Amrita Vishwa Vidyapeetham : ${gellinksss}` )
+}
+//3d printing
+else if(input.includes("3d printing")){
+    let gels="https://www.psgtech.edu/"
+    let gelss="https://www.kct.ac.in/"
+    let gelsss="https://www.sastra.edu/"
+    const gellinks=`<a href='${gels}'>PSG College of Technology, Coimbatore</a>`
+    const gellinkss=`<a href='${gelss}'>Kumaraguru College of Technology, Coimbatore</a>`
+    const gellinksss=`<a href='${gelsss}'>SASTRA Deemed University, Thanjavur</a>`
+    return (`PSG College of Technology, Coimbatore : ${gellinks}`+'<br/>'+
+    `Kumaraguru College of Technology, Coimbatore : ${gellinkss}`+ '<br/>'+
+    `SASTRA Deemed University, Thanjavur : ${gellinksss}` )
+}
+else if(input.includes("marine")){
+    let gels="https://www.ametuniv.ac.in/"
+    let gelss="http://www.himtmarine.com/"
+    let gelsss="https://www.cmcmarine.in/"
+    const gellinks=`<a href='${gels}'>Academy of Maritime Education and Training (AMET) University, Chennai</a>`
+    const gellinkss=`<a href='${gelss}'>Hindustan Institute of Maritime Training (HIMT), Chennai</a>`
+    const gellinksss=`<a href='${gelsss}'>Coimbatore Marine College (CMC), Coimbatore</a>`
+    return (` Academy of Maritime Education and Training (AMET) University, Chennai: ${gellinks}`+'<br/>'+
+    `Hindustan Institute of Maritime Training (HIMT), Chennai : ${gellinkss}`+ '<br/>'+
+    ` Coimbatore Marine College (CMC), Coimbatore: ${gellinksss}` )
+}
+else if(input.includes("textile")){
+    let gels="https://www.kct.ac.in/"
+    let gelss="https://www.psgtech.edu/"
+    let gelsss="https://www.svpitm.ac.in/"
+    const gellinks=`<a href='${gels}'>Kumaraguru College of Technology</a>`
+    const gellinkss=`<a href='${gelss}'>PSG College of Technology</a>`
+    const gellinksss=`<a href='${gelsss}'>Sardar Vallabhbhai Patel International School of Textiles and Management</a>`
+    return (`Kumaraguru College of Technology : ${gellinks}`+'<br/>'+
+    `PSG College of Technology : ${gellinkss}`+ '<br/>'+
+    ` Sardar Vallabhbhai Patel International School of Textiles and Management: ${gellinksss}` )
+}
+else if(input.includes("information technology")||input.includes("it")){
+    let gels="https://www.annauniv.edu/campus/ceg.php"
+    let gelss="https://www.ssn.edu.in/"
+    let gelsss="https://www.tce.edu/"
+    const gellinks=`<a href='${gels}'>College of Engineering, Guindy (CEG)</a>`
+    const gellinkss=`<a href='${gelss}'>SSN College of Engineering</a>`
+    const gellinksss=`<a href='${gelsss}'>Thiyagarajar College of Engineering</a>`
+    return (`College of Engineering, Guindy (CEG) : ${gellinks}`+'<br/>'+
+    `SSN College of Engineering : ${gellinkss}`+ '<br/>'+
+    `Thiyagarajar College of Engineering : ${gellinksss}` )
+}
+else if(input.includes("computer science")||input.includes("csc")){
+    let gels="https://www.srmist.edu.in/"
+    let gelss="https://www.tce.edu/"
+    let gelsss="https://cit.edu.in/"
+    const gellinks=`<a href='${gels}'>SRM Institute of Science and Technology, Kattankulathur</a>`
+    const gellinkss=`<a href='${gelss}'>Thiagarajar College of Engineering, Madurai</a>`
+    const gellinksss=`<a href='${gelsss}'>Coimbatore Institute of Technology, Coimbatore</a>`
+    return (`SRM Institute of Science and Technology, Kattankulathur : ${gellinks}`+'<br/>'+
+    `Thiagarajar College of Engineering, Madurai : ${gellinkss}`+ '<br/>'+
+    `Coimbatore Institute of Technology, Coimbatore : ${gellinksss}` )
+}
+else if(input.includes("mechanical")||input.includes("mech")){
+    let gels="https://ceg.annauniv.edu/"
+    let gelss="https://www.tce.edu/"
+    let gelsss="https://www.kct.ac.in/"
+    const gellinks=`<a href='${gels}'>College of Engineering, Guindy (CEG), Anna University</a>`
+    const gellinkss=`<a href='${gelss}'>Thiyagarajar College of Engineering, Madurai</a>`
+    const gellinksss=`<a href='${gelsss}'>Kumaraguru College of Technology (KCT), Coimbatore</a>`
+    return (` College of Engineering, Guindy (CEG), Anna University: ${gellinks}`+'<br/>'+
+    `Thiyagarajar College of Engineering, Madurai: ${gellinkss}`+ '<br/>'+
+    ` Kumaraguru College of Technology (KCT), Coimbatore: ${gellinksss}` )
+}
+else if(input.includes("chemical")||input.includes("chem")){
+    let gels="https://www.annauniv.edu/cce/"
+    let gelss="https://www.nitt.edu/"
+    let gelsss="https://www.kongu.ac.in/kec/"
+    const gellinks=`<a href='${gels}'>College of Engineering, Guindy (CEG), Anna University</a>`
+    const gellinkss=`<a href='${gelss}'>National Institute of Technology (NIT), Trichy</a>`
+    const gellinksss=`<a href='${gelsss}'>Kongu Engineering College (KEC), Erode</a>`
+    return (`College of Engineering, Guindy (CEG), Anna University : ${gellinks}`+'<br/>'+
+    `National Institute of Technology (NIT), Trichy: ${gellinkss}`+ '<br/>'+
+    `Kongu Engineering College (KEC), Erode : ${gellinksss}` )
+}
+else if(input.includes("eee")||input.includes("electrical and electronics")){
+    let gels="https://www.nitt.edu/"
+    let gelss="https://www.bits-pilani.ac.in/"
+    let gelsss="https://www.iiita.ac.in/"
+    const gellinks=`<a href='${gels}'>National Institute of Technology, Tiruchirappalli</a>`
+    const gellinkss=`<a href='${gelss}'>Birla Institute of Technology and Science, Pilani</a>`
+    const gellinksss=`<a href='${gelsss}'></a>`
+    return (`National Institute of Technology, Tiruchirappalli : ${gellinks}`+'<br/>'+
+    `Birla Institute of Technology and Science, Pilani: ${gellinkss}`+ '<br/>'+
+    `Indian Institute of Information Technology, Allahabad : ${gellinksss}` )
+}else if(input.includes("fashion")||input.includes("fashion technology")){
+    let gels="https://bitsathy.ac.in/"
+    let gelss="https://www.kct.ac.in/"
+    let gelsss="https://www.psgtech.edu/"
+    const gellinks=`<a href='${gels}'>Bannari Amman Institute of Technology (BIT), Erode</a>`
+    const gellinkss=`<a href='${gelss}'>Kumaraguru College of Technology (KCT), Coimbatore</a>`
+    const gellinksss=`<a href='${gelsss}'></a>`
+    return (` Bannari Amman Institute of Technology (BIT), Erode: ${gellinks}`+'<br/>'+
+    `Kumaraguru College of Technology (KCT), Coimbatore: ${gellinkss}`+ '<br/>'+
+    `PSG College of Technology, Coimbatore : ${gellinksss}` )
+}else if(input.includes("civil")||input.includes("civil")){
+    let gels="https://www.nitt.edu/"
+    let gelss="https://www.bits-pilani.ac.in/"
+    let gelsss="https://www.annauniv.edu/ceg/index.html"
+    const gellinks=`<a href='${gels}'>National Institute of Technology, Trichy</a>`
+    const gellinkss=`<a href='${gelss}'>Birla Institute of Technology and Science, Pilani</a>`
+    const gellinksss=`<a href='${gelsss}'>College of Engineering, Guindy</a>`
+    return (`National Institute of Technology, Trichy : ${gellinks}`+'<br/>'+
+    `Birla Institute of Technology and Science, Pilani: ${gellinkss}`+ '<br/>'+
+    ` College of Engineering, Guindy: ${gellinksss}` )
+}else if(input.includes("ece")||input.includes("electronics and communication")){
+    let gels="https://tce.edu/"
+    let gelss="https://www.psgtech.edu/"
+    let gelsss="https://www.ssn.edu.in/"
+    const gellinks=`<a href='${gels}'>Thiagarajar College of Engineering</a>`
+    const gellinkss=`<a href='${gelss}'>PSG College of Technology</a>`
+    const gellinksss=`<a href='${gelsss}'>SSN College of Engineering</a>`
+    return (`Thiagarajar College of Engineering : ${gellinks}`+'<br/>'+
+    `PSG College of Technology: ${gellinkss}`+ '<br/>'+
+    ` SSN College of Engineering: ${gellinksss}` )
+}else if(input.includes("aeronautical")||input.includes("aeronautics")){
+    let gels="http://www.mitindia.edu/en/"
+    let gelss="https://www.siet.ac.in/aeronautical-engineering.html"
+    let gelsss="https://www.niet.co.in/b-e-aeronautical-engineering/"
+    const gellinks=`<a href='${gels}'>Madras Institute of Technology (MIT), Chennai</a>`
+    const gellinkss=`<a href='${gelss}'>Sri Shakthi Institute of Engineering and Technology (SSIET), Coimbatore</a>`
+    const gellinksss=`<a href='${gelsss}'>Nehru Institute of Engineering and Technology (NIET), Coimbatore</a>`
+    return (`Madras Institute of Technology (MIT), Chennai : ${gellinks}`+'<br/>'+
+    `Sri Shakthi Institute of Engineering and Technology (SSIET), Coimbatore: ${gellinkss}`+ '<br/>'+
+    `Nehru Institute of Engineering and Technology (NIET), Coimbatore : ${gellinksss}` )
+}
+
+
     else if(input=="yogeshwaran"){
         return "Porambokku"
     }else if(input=="how are you" ){
@@ -59,7 +232,7 @@ const courseLink = `<a href='${course}'>${course}</a>`;
     }
     else if(input=="Assesment Starts Engineering!!!"){
         return(
-        '<input class="check" id="check1" onClick={test1()} type="checkbox" value=0 />1.<a class="mech" >You are embedded domain person and your friend is having problem with solving technical code. Will you help him?' +'</a>'                                                     +'<br/>'
+        '<input class="check" id="check1" onClick={test1()} type="checkbox" value=0 />1.<a class="mech" >You are embedded domain person and your friend is having problem with solving technical code. Will you help him?</a>'                                                     +'<br/>'
         +'<input class="check" id="check2" onClick={test2()} type="checkbox"  value=0  />2.<a class="mech">Tiny thinks are cute right. Do think micro things has more capability?</a>'                                                                                               +'<br/>'
         +'<input class="check" id="check3" onClick={test3()} type="checkbox" value=0/>3.<a class="mech">Childhood is not complete without mobile games. Do you like connection puzzle game? </a>'                                                                                 +'<br/>'
         +'<input class="check" id="check4" onClick={test4()} type="checkbox" value=0 />4.<a class="mech">You are going on party, will you be more passionate about your look? </a>'                                                                                                +'<br/>'
@@ -88,9 +261,31 @@ const courseLink = `<a href='${course}'>${course}</a>`;
         +'<input class="check"  id="check27" onClick={test27()} type="checkbox" value=0 />27.<a class="mech">Have you combined colours to produce a different shade? </a>'                                                                                                            +'<br/>'
         +'<input class="check" id="check28" onClick={test28()} type="checkbox" value=0 />28.<a class="mech">You have perception about a matter happening around but your friend has a different perspective and different opinion. Will you consider his/her opinion? </a>' +'<br/>'
         +'<input class="check" id="check29" onClick={test29()} type="checkbox" value=0 />29.<a class="mech">Friends are the choosen family. Consider that you and your gang are planning for a trip to Manali. Will be the organise the trip? </a>'+'<t/>'                           +'<br/>'
-        +'<input class="check" id="check30" onClick={test30()} type="checkbox" value=0 />30.<a class="mech">Can you think and decide a immediate decision in a hectic situation?</a>'                                                                                                +'<br/>'
+        +'<input class="check" id="check30" onClick={test30()} type="checkbox" value=0 />30.<a class="mech">Can you think and decide a immediate decision in a hectic situation?</a>' +'<br/>'
+        //Marine
+        +'<input class="check" id="check31" onClick={test31()} type="checkbox" value=0 />31.<a class="mech">Do you find ocean exploration and research interesting?</a>'                            +'<br/>'
+        +'<input class="check" id="check32" onClick={test32()} type="checkbox" value=0 />32.<a class="mech">Do you enjoy learning about different cultural and travelling to new places?</a>'       +'<br/>'
+        +'<input class="check" id="check33" onClick={test33()} type="checkbox" value=0 />33.<a class="mech">Have you ever considered a career that involves working outdoors and on th water?</a>'  +'<br/>'
+        //Bio-Medical                                                                                          
+        +'<input class="check" id="check34" onClick={test34()} type="checkbox" value=0 />34.<a class="mech">Do you find yourself drawn to biology and anatomy, but also have an interest in mathematics and physics?</a>'                +'<br/>'
+        +'<input class="check" id="check35" onClick={test35()} type="checkbox" value=0 />35.<a class="mech">Have you ever wondered how medical imaging technologies work?</a>'                                                           +'<br/>'
+        +'<input class="check" id="check36" onClick={test36()} type="checkbox" value=0 />36.<a class="mech">Do you see yourself pursuing a career that involves combining biology and technology to improve healthcare outcomes?</a>'    +'<br/>'
+        //Aerospace
+        +'<input class="check" id="check37" onClick={test37()} type="checkbox" value=0 />37.<a class="mech">Have you ever watched a documentary or movie about the history of aviation?</a>'    +'<br/>'
+        +'<input class="check" id="check38" onClick={test38()} type="checkbox" value=0 />38.<a class="mech">Do you have an interest in learning about the principles of flight and aerodynamics?</a>'    +'<br/>'
+        +'<input class="check" id="check39" onClick={test39()} type="checkbox" value=0 />39.<a class="mech">Do you follow the current events relates to space operation?</a>'    +'<br/>'
+        //AI and data science
+        +'<input class="check" id="check40" onClick={test40()} type="checkbox" value=0 />40.<a class="mech">Do you follow the current events relates to space operation?</a>'    +'<br/>'
+        +'<input class="check" id="check41" onClick={test41()} type="checkbox" value=0 />41.<a class="mech">Do you enjoy reading about new advancements in technology and how they can be applied to real-world problems?</a>'    +'<br/>'
+        +'<input class="check" id="check42" onClick={test42()} type="checkbox" value=0 />42.<a class="mech">Do you enjoy experimenting with data and coming up with innovative solutions?</a>'    +'<br/>'
+        //3D Printing and Additive manufacturing engineering
+        +'<input class="check" id="check43" onClick={test43()} type="checkbox" value=0 />43.<a class="mech">Have you ever been fascinated by the idea of turning a digital model into a physical object?</a>'    +'<br/>'
+        +'<input class="check" id="check44" onClick={test44()} type="checkbox" value=0 />44.<a class="mech">Do you ever thought about the 3D printing works and its manufacturing process?</a>'    +'<br/>'
+        +'<input class="check" id="check45" onClick={test45()} type="checkbox" value=0 />45.<a class="mech">Have you ever wanted to learn more about the advancements in 3D printing technology?</a>'    +'<br/>'
+
+//Submit
         + '<button class="submit" onClick={tes()}> Submit</button>')
-    }else if(input=="mama"){
+    }else if(input=="Are you ok"){
         return 'yes'
     }
         else {
@@ -420,6 +615,171 @@ else if(nums1.checked== false){
        document.getElementById("check30").value = 0;
     }
 }
+//31
+function test31(){
+    let nums1=document.getElementById("check31");
+  
+    if(nums1.checked == true){
+        document.getElementById("check31").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check31").value = 0;
+    }
+}
+//32
+function test32(){
+    let nums1=document.getElementById("check32");
+  
+    if(nums1.checked == true){
+        document.getElementById("check32").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check32").value = 0;
+    }
+}
+//33
+function test33(){
+    let nums1=document.getElementById("check33");
+  
+    if(nums1.checked == true){
+        document.getElementById("check33").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check33").value = 0;
+    }
+}
+//34
+function test34(){
+    let nums1=document.getElementById("check34");
+  
+    if(nums1.checked == true){
+        document.getElementById("check34").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check34").value = 0;
+    }
+}
+//35
+function test35(){
+    let nums1=document.getElementById("check35");
+  
+    if(nums1.checked == true){
+        document.getElementById("check35").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check35").value = 0;
+    }
+}
+//36
+function test36(){
+    let nums1=document.getElementById("check36");
+  
+    if(nums1.checked == true){
+        document.getElementById("check36").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check36").value = 0;
+    }
+}
+//37
+function test37(){
+    let nums1=document.getElementById("check37");
+  
+    if(nums1.checked == true){
+        document.getElementById("check37").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check37").value = 0;
+    }
+}
+//38
+function test38(){
+    let nums1=document.getElementById("check38");
+  
+    if(nums1.checked == true){
+        document.getElementById("check38").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check38").value = 0;
+    }
+}
+//39
+function test39(){
+    let nums1=document.getElementById("check39");
+  
+    if(nums1.checked == true){
+        document.getElementById("check39").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check39").value = 0;
+    }
+}
+//40
+function test40(){
+    let nums1=document.getElementById("check40");
+  
+    if(nums1.checked == true){
+        document.getElementById("check40").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check40").value = 0;
+    }
+}
+//41
+function test41(){
+    let nums1=document.getElementById("check41");
+  
+    if(nums1.checked == true){
+        document.getElementById("check41").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check41").value = 0;
+    }
+}
+//42
+function test42(){
+    let nums1=document.getElementById("check42");
+  
+    if(nums1.checked == true){
+        document.getElementById("check42").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check42").value = 0;
+    }
+}
+//43
+function test43(){
+    let nums1=document.getElementById("check43");
+  
+    if(nums1.checked == true){
+        document.getElementById("check43").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check43").value = 0;
+    }
+}
+//44
+function test44(){
+    let nums1=document.getElementById("check44");
+  
+    if(nums1.checked == true){
+        document.getElementById("check44").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check44").value = 0;
+    }
+}
+//45
+function test45(){
+    let nums1=document.getElementById("check45");
+  
+    if(nums1.checked == true){
+        document.getElementById("check45").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check45").value = 0;
+    }
+}
 //total
 function tes(){
     let checky=document.getElementById("check1").value;
@@ -452,19 +812,41 @@ function tes(){
     let checky27=document.getElementById("check28").value;
     let checky28=document.getElementById("check29").value;
     let checky29=document.getElementById("check30").value;
+    let checky30=document.getElementById("check31").value;
+    let checky31=document.getElementById("check32").value;
+    let checky32=document.getElementById("check33").value;   
+    let checky33=document.getElementById("check34").value;
+    let checky34=document.getElementById("check35").value;
+    let checky35=document.getElementById("check36").value;
+    let checky36=document.getElementById("check37").value;
+    let checky37=document.getElementById("check38").value;
+    let checky38=document.getElementById("check39").value;
+    let checky39=document.getElementById("check40").value;
+    let checky40=document.getElementById("check41").value;
+    let checky41=document.getElementById("check42").value;
+    let checky42=document.getElementById("check43").value;
+    let checky43=document.getElementById("check44").value;
+    let checky44=document.getElementById("check45").value;   
+    
     
     let ECE= Number(checky) + Number(checky1) + Number(checky2);
     let Fashion= Number(checky3)+Number (checky4)+ Number(checky5);
     let Civil= Number (checky6)+Number (checky7)+ Number(checky8)
-     let  EEE =Number (checky9) +Number(checky10)+Number(checky11)
-    let Chemical=Number(checky12) + Number(checky13) + Number(checky14);
-   let mech=Number  (checky15)+ Number(checky16) + Number(checky17);
-   let csc= Number (checky18)+Number (checky19) + Number(checky20);
-   let IT = Number(checky21) +Number(checky22)+Number(checky23) ;
+    let  EEE =Number (checky9) +Number(checky10)+Number(checky11)
+   let Chemical=Number(checky12) + Number(checky13) + Number(checky14);
+   let mech=    Number  (checky15)+ Number(checky16) + Number(checky17);
+   let csc=     Number (checky18)+Number (checky19) + Number(checky20);
+   let IT =     Number(checky21) +Number(checky22)+Number(checky23) ;
    let textile =  Number (checky24)+Number (checky25) +Number(checky26)
    let Aero= Number(checky27)+ Number(checky28) +Number(checky29);
+   let marine=Number  (checky30)+ Number(checky31) + Number(checky32);
+   let biomedical= Number (checky33)+Number (checky34) + Number(checky35);
+   let aerospace = Number(checky36) +Number(checky37)+Number(checky38) ;
+   let Ai =  Number (checky39)+Number (checky40) +Number(checky41)
+   let printing= Number(checky42)+ Number(checky43) +Number(checky44);
 //    alert(res);
 //    getval(res);
+let krish="https://www.skct.edu.in/#/"
 let arr=[{name:"ECE",marks:ECE},
 {name:"Fashion",marks:Fashion},
 {name:"Civil",marks:Civil},
@@ -475,6 +857,11 @@ let arr=[{name:"ECE",marks:ECE},
 {name:"IT",marks:IT},
 {name:"Textile",marks:textile},
 {name:"Aeronautical",marks:Aero},
+{name:"Marine",marks:marine},
+{name:"Bo medical",marks:biomedical},
+{name:"Aerospace",marks:aerospace},
+{name:"AI and Data Science",marks:Ai},
+{name:"3D Printing and Additive Manufracturing",marks:printing}
 ];
 let myArr=["ECE",
 "Fashion",
@@ -505,7 +892,7 @@ console.log("ECE"+ ECE,"Fashion"+ Fashion,"Civil"+ Civil,"EEE"+ EEE,"Chemical"+C
 console.log("filtered",filtered);
 let gee=filtered.map((b)=>{
     return(
-        b.name
+        b.name 
     )
 })
 let ghee=filtered1.map((b)=>{

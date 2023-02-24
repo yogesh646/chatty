@@ -21,10 +21,15 @@
                   
                   
             </button>
-            <div style="background-color: rosybrown; ">  <a class="chat-icons">
-                
+            <div style="background-color: rosybrown;  ">  <a class="chat-icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/4233/4233830.png" 
+                style="height: 40px; width: 40px;border-radius: 50px;margin-left: 20px;margin-top: 00px;">
+        <b style="margin-left:10px;margin-top: 10px;font-size: 20px;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;">Tom</b>
+
+            </img>
+        <!-- <a style="margin-top: 10px;font-size: 15px;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;">Tom</a> -->
     <!-- <i id="chat-icon" style="color: #0f0000;" class="	fa fa-link"></i> -->
-                <i class="fa fa-video-camera" style="margin-left: 20px;margin-top: 10px;cursor: pointer;" aria-hidden="true"></i>
+                <i class="fa fa-video-camera" style="margin-left: 450px;margin-top: 10px;cursor: pointer;" aria-hidden="true"></i>
                 <i class="fa fa-phone" style="margin-left: 40px;margin-top: 10px;cursor: pointer" aria-hidden="true"></i>
                 <i class="fa fa-bars" style="margin-left: 40px;margin-top: 10px;cursor: pointer" aria-hidden="true"></i>
                 <!-- <i class="fa fa-bars" style="margin-left: 10px;color: white;" aria-hidden="true"></i> -->
@@ -94,7 +99,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const greetingvalue=urlParams.get('greeting');
     console.log(greetingvalue);
-    // console.log("select");
+    console.log("select");
     document.getElementById("botStarterMessages").innerHTML=greetingvalue;
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

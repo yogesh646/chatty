@@ -60,7 +60,7 @@ function firstBotMessage() {
 
 //    console.log(userName);
     
-            let firstMessage ='<img style="height:100px;width:100px" src="https://www.svgrepo.com/download/312218/folded-hands.svg"/>'+'<br/>'+'<a style="margin-left:10px;font-weight:bolder">WELCOME </a>';
+            let firstMessage ='<a style="margin-left:10px;font-weight:bolder">WELCOME </a>';
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -127,18 +127,22 @@ function sendButton() {
 function getval(res,ghee) {
     // href='selection.html'
     alert(res);
-    
+    let yes="yes"
     let userHtml = '<p class="userText"><span >'+"<a class='intrest' >Intrested : </a>" 
-    + res +"<br/>"+"<a class='intrest'> Below Intrested : </a>"+ ghee+ 
-    "<br/>"+`<a class='submit' onClick="interest('${res+ "<br/>" + "<br/>" +ghee}')"> Check Colleges <a/>`+'</span></p>';
+    + res +"<br/>"+"<a class='intrest'> Below Intrested : </a>"+ ghee + 
+    "<br/>"+
+    "<a class='submito'>Want to Continue with the Colleges?</a>"+'<br/>'
+    // +`<a class='submit' onClick="interest('${res+ "<br/>" + "<br/>" +ghee}')"> Check Colleges <a/>`+'</span></p>';
+    +`<button class='submits' onClick="interest()"> Yes <button/>`+'<br/>'
+    +`<button class='submits' onClick="interests()"> No <button/>`
+    +'</span></p>';
        $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
-    setTimeout(() => {
-        getHardResponse(res);
-    }, 800)
-
-   
+    // setTimeout(() => {
+    //     getHardResponse(res);
+    // }, 800)
 }
+
 function getengg(red) {
     // alert(red);
     let userHtml = '<p class="userText"><span>'+"<a class='intrest'>Engineering Task : </a>" + red + '</span></p>';
@@ -168,7 +172,21 @@ $("#textInput").keypress(function (e) {
     }
 });
 
-function interest(hellos,bellos){
+function interest(){
     // console.log(hellos,bellos);
-window.location.href=`file:///C:/Users/lenovo/ChatBot/selection.html?greeting=${hellos}`
+// window.location.href=`file:///C:/Users/lenovo/ChatBot/selection.html?greeting=${hellos}`
+console.log('yes');
+let yes="yes";
+let userHtml = '<p class="userText"><span>' + yes + '</span></p>';
+$("#chatbox").append(userHtml);
+document.getElementById("chat-bar-bottom").scrollIntoView(true);
+setTimeout(() => {
+    getHardResponse(yes);
+}, 800)
+
+}
+function interests(){
+    // console.log(hellos,bellos);
+// window.location.href=`file:///C:/Users/lenovo/ChatBot/selection.html?greeting=${hellos}`
+console.log('no');
 }
