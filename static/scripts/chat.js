@@ -52,13 +52,8 @@ if(hours>12){
 }
 
 // Gets the first message
-
-//வணக்கம்
 function firstBotMessage() {
-    // let userName = $("#textInputs").val();
-    // let userName = $("#textInputs").val();
-
-//    console.log(userName);
+    
     
             let firstMessage ='<a style="margin-left:10px;font-weight:bolder">WELCOME </a>';
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
@@ -127,13 +122,12 @@ function sendButton() {
 function getval(res,ghee) {
     // href='selection.html'
     alert(res);
-    let yes="yes"
+    
     let userHtml = '<p class="userText"><span >'+"<a class='intrest' >Intrested : </a>" 
-    + res +"<br/>"+"<a class='intrest'> Below Intrested : </a>"+ ghee + 
-    "<br/>"+
+    + res +"<br/>"+"<br/>"+"<a class='intrest'> Below Intrested : </a>"+ ghee + 
+    "<br/>"+"<br/>"+
     "<a class='submito'>Want to Continue with the Colleges?</a>"+'<br/>'
-    // +`<a class='submit' onClick="interest('${res+ "<br/>" + "<br/>" +ghee}')"> Check Colleges <a/>`+'</span></p>';
-    +`<button class='submits' onClick="interest()"> Yes <button/>`+'<br/>'
+       +`<button class='submits' onClick="interest()"> Yes <button/>`+'<br/>'
     +`<button class='submits' onClick="interests()"> No <button/>`
     +'</span></p>';
        $("#chatbox").append(userHtml);
@@ -142,7 +136,25 @@ function getval(res,ghee) {
     //     getHardResponse(res);
     // }, 800)
 }
-
+//arts result
+function getvalart(res,ghee) {
+    // href='selection.html'
+    alert(res);
+    
+    let userHtml = '<p class="userText"><span >'+"<a class='intrest' >Intrested : </a>" 
+    + res +"<br/>"+"<br/>"+"<a class='intrest'> Below Intrested : </a>"+ ghee + 
+    "<br/>"+"<br/>"+
+    "<a class='submito'>Want to Continue with the Colleges?</a>"+'<br/>'
+       +`<button class='submits' onClick="interest()"> Yes <button/>`+'<br/>'
+    +`<button class='submits' onClick="interests()"> No <button/>`
+    +'</span></p>';
+       $("#chatbox").append(userHtml);
+    document.getElementById("chat-bar-bottom").scrollIntoView(true);
+    // setTimeout(() => {
+    //     getHardResponse(res);
+    // }, 800)
+}
+//
 function getengg(red) {
     // alert(red);
     let userHtml = '<p class="userText"><span>'+"<a class='intrest'>Engineering Task : </a>" + red + '</span></p>';

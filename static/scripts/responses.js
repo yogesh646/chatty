@@ -36,7 +36,11 @@ return(
     }
     if(input.includes("who made you") || input.includes("boss")||input.includes("master")){
    
-        const arr=[{name:"I was made by the end semester project by a team",id:0},{name:"I was made by the end semester project by a team",id:1},{name:"I was made by the end semester project by a team",id:2},{name:"I was made by the end semester project by a team",id:3},{name:"I was made by the end semester project by a team",id:4}];
+        const arr=[{name:"I was made by the end semester project by a team",id:0}
+        ,{name:"I was made by the end semester project by a team",id:1}
+        ,{name:"I was made by the end semester project by a team",id:2}
+        ,{name:"I was made by the end semester project by a team",id:3}
+        ,{name:"I was made by the end semester project by a team",id:4}];
         const rob=Math.floor( Math.random()*4.14);
         const fins=arr.filter(a=>a.id==rob)
         
@@ -44,14 +48,22 @@ return(
         }
     if(input.includes("hi") || input.includes("hey")){
    
-    const arr=[{name:"Hey:-)",id:0},{name:"Hello, thanks for using chatbot",id:1},{name:"Hi ,there  what can I do for you?",id:2},{name:"Hi ,there how can I help ?",id:3},{name:"Hey how can I help you?",id:4}];
+    const arr=[{name:"Hey:-)",id:0},
+    {name:"Hello, thanks for using chatbot",id:1},
+    {name:"Hi ,there  what can I do for you?",id:2},
+    {name:"Hi ,there how can I help ?",id:3},
+    {name:"Hey how can I help you?",id:4}];
     const rob=Math.floor( Math.random()*4.14);
     const fins=arr.filter(a=>a.id==rob)
     
         return (  fins.map((a)=>a.name)  )
     } if(input.includes("what help") || input.includes("can you help me") || input.includes("i need some help")){
    
-        const arr=[{name:"Thank you, for contacting me. Press ENTER to start the assesment.",id:0},{name:"I'm here to help you for your course selection process.Press Enter to start the Assesment",id:1},{name:"I would love to help you,Press Enter to start the Assesment",id:2},{name:"Please Press Enter to start the Assesment",id:3},{name:"Press Enter to start the Assesment",id:4}];
+        const arr=[{name:"Thank you, for contacting me. Press ENTER to start the assesment.",id:0}
+        ,{name:"I'm here to help you for your course selection process.Press Enter to start the Assesment",id:1}
+        ,{name:"I would love to help you,Press Enter to start the Assesment",id:2}
+        ,{name:"Please Press Enter to start the Assesment",id:3}
+        ,{name:"Press Enter to start the Assesment",id:4}];
         const rob=Math.floor( Math.random()*4.14);
         const fins=arr.filter(a=>a.id==rob)
         
@@ -258,7 +270,70 @@ let coupon = 'https://www.stackoverflow.com';
 const courseLink = `<a href='${course}'>${course}</a>`;
         return  `you learn ${courseLink}`
     }else if(input=="Assesment Starts Arts!!!"){
-        return "Arts Question and Ans"
+        return (
+            //Bachelors in Sociology:
+            '<input class="check" id="check46" onClick={test46()} type="checkbox" value=0 />1.<a class="mech" >Have you ever felt to motivated to make a positive impact on society and bring about social change?</a>'                                                     +'<br/>'
+            +'<input class="check" id="check47" onClick={test47()} type="checkbox"  value=0  />2.<a class="mech">Do you feel a sense of satisfaction in understanding the reason behind human behavior and social phenomena?</a>'                                                                                               +'<br/>'
+            +'<input class="check" id="check48" onClick={test48()} type="checkbox" value=0/>3.<a class="mech">Have you ever wondered about the root causes of inequality and injustice in society? </a>'                                                                                 +'<br/>'
+            //Bachelors in Economics
+            +'<input class="check" id="check49" onClick={test49()} type="checkbox" value=0 />4.<a class="mech">Are you interested in understanding the factor that influence the Gobal economy? </a>'                                                                                                +'<br/>'
+            +'<input class="check" style="top:10px;" id="check50" onClick={test50()} type="checkbox"value=0  />5.<a class="mech">Are you been crazy about money? </a>'                                                                                      +'<br/>'
+            +'<input class="check" id="check51" onClick={test51()} type="checkbox" value=0 />6.<a class="mech">Are you curious about business operate and their impact on the society?</a>'                                                                                                        +'<br/>'
+            //Bachelors in Literature
+            +'<input class="check" id="check52" onClick={test52()} type="checkbox" value=0 />7.<a class="mech">Do you find yourself wondering about the ways in which language has evolved over time? </a>'                                                                    +'<br/>'
+            +'<input class="check" id="check53" onClick={test53()} type="checkbox" value=0 />8.<a class="mech">Are you interested in learning about the cultural and social factors that have influenced language use throughout history? </a>'                                                                                                                                       +'<br/>'
+            +'<input class="check" id="check54" onClick={test54()} type="checkbox" value=0 />9.<a class="mech">Do you find it interesting to compare and contrast different languages, both past and present? </a>'                                                                                                         +'<br/>'
+            //Bachelors in Design
+            +'<input class="check" id="check55" onClick={test55()} type="checkbox" value=0 />10.<a class="mech">Do you often notice the visual details in your environment?   </a>'  +'</br/>'
+            +'<input class="check" id="check56" onClick={test56()} type="checkbox" value=0 />11.<a class="mech">.Have you ever tried to improve the appearance of your living space.room or furniture?</a>'                                                                                                              +'<br/>'
+            +'<input class="check" id="check57" onClick={test57()} type="checkbox" value=0 />12.<a class="mech">Will you be more peculiar in different design styles? </a>'                                                                                                                     +'<br/>'
+            //Bachelors in Event Management 
+            + '<input class="check" id="check58" onClick={test58()} type="checkbox" value=0 />13. <a class="mech" >.Are you person of having a plan B ready, if things don’t go according to plan? </a>'                                                                 +'<br/>'
+            + '<input class="check" id="check59" onClick={test59()} type="checkbox" value=0 />14.<a class="mech" >Will you look for minor imperfection in work? </a>'                                                                                                                     +'<br/>'
+            + '<input class="check" id="check60" onClick={test60()} type="checkbox" value=0 />15. <a class="mech" >Even though you are not well paid, will you stick on to your job as it was your passion? </a>'                                                               +'<br/>'
+            //Bachelors of fine arts
+            + '<input class="check" id="check61" onClick={test61()} type="checkbox" value=0 /> 16.<a class="mech" >Imagine yourself as an artist. Will you be able to visualize your art without any reference? </a>'                                                                                                                                     +'<br/>'
+            +'<input class="check" id="check62" onClick={test62()} type="checkbox"  value=0  />17.<a class="mech">When you are creating art or designs, do you tend to choose colors   based on the emotions or moods you want to convey?</a>'                                                                                                                   +'<br/>'
+            +'<input class="check" id="check63" onClick={test63()} type="checkbox" value=0   />18.<a class="mech">Do you have composition knowledge to work with complex materials? </a>'                                                                                                           +'<br/>'
+            //Bachelor in Fashion Designing:
+            +'<input class="check"  id="check64" onClick={test64()} type="checkbox" value=0 />19.<a class="mech">Do you think that you have better taste in clothing? </a>'                                                                                    +'<br/>'
+            +'<input class="check"  id="check65" onClick={test65()} type="checkbox"value=0  />20.<a class="mech">Are you a person who is cautionate about the look? </a>'                                                                                       +'<br/>'
+            +'<input class="check"  id="check66" onClick={test66()} type="checkbox" value=0 />21.<a class="mech">Do you have the capability of articulating designer ideas on the paper or the medium? </a>'                                                                                               +'<br/>'
+            //Bachelor of Hotel Management:
+            +'<input class="check" id="check67" onClick={test67()} type="checkbox" value=0 />22.<a class="mech">Are you comfortable in working fast paced and ever changing environment? </a>'                                                         +'<br/>'
+            +'<input class="check" id="check68" onClick={test68()} type="checkbox" value=0 />23.<a class="mech">Are you interested in learning about different types of cuisine and cooking techniques? </a>'                                +'<br/>'
+            +'<input class="check"  id="check69" onClick={test69()} type="checkbox" value=0 />24.<a class="mech">Are you willing to work long hours and week end if required in the hospitality industry? </a>'                                                                                                                               +'<br/>'
+            //Bachelors of Business Administration
+            +'<input class="check"  id="check70" onClick={test70()} type="checkbox" value=0 />25.<a class="mech">Do you think you have the capability of leading?  </a>'                                                                                     +'</br/>'
+            +'<input class="check"  id="check71" onClick={test71()} type="checkbox" value=0 />26.<a class="mech">Will you provide service by listening to concerns with courtesy and empathy?</a>'                                                                                                                        +'<br/>'
+            +'<input class="check"  id="check72" onClick={test72()} type="checkbox" value=0 />27.<a class="mech">Can you easily judge the professionalism of a person?</a>'                                                                                                            +'<br/>'
+           //Law Course
+            +'<input class="check" id="check73" onClick={test73()} type="checkbox" value=0 />28.<a class="mech">Are you person who strictly follow the protocol and regulation? </a>' +'<br/>'
+            +'<input class="check" id="check74" onClick={test74()} type="checkbox" value=0 />29.<a class="mech">Are you person who can sort out the important details from a long conversation? </a>'+'<t/>'                           +'<br/>'
+            +'<input class="check" id="check75" onClick={test75()} type="checkbox" value=0 />30.<a class="mech">Do you think you have the vocal power to argue?</a>' +'<br/>'
+            //Bachelors of Journalism and Mass Communication:
+            +'<input class="check" id="check76" onClick={test76()} type="checkbox" value=0 />31.<a class="mech">Do you have a skill of writing a ordinary story with dramatical connect?</a>'                            +'<br/>'
+            +'<input class="check" id="check77" onClick={test77()} type="checkbox" value=0 />32.<a class="mech">Do you have the habit of reading a wide range of news sources to stay updated on the happening events?</a>'       +'<br/>'
+            +'<input class="check" id="check78" onClick={test78()} type="checkbox" value=0 />33.<a class="mech">Can be able to detect the exact information without it is been directly conveyed? </a>'  +'<br/>'
+            //Bachelor of Mass Media                                                                                        
+            +'<input class="check" id="check79" onClick={test79()} type="checkbox" value=0 />34.<a class="mech">Do you ever thought of being a influencer?</a>'                +'<br/>'
+            +'<input class="check" id="check80" onClick={test80()} type="checkbox" value=0 />35.<a class="mech">Have you ever created or contributed to a blog,vlog or podcast?</a>'                                                           +'<br/>'
+            +'<input class="check" id="check81" onClick={test81()} type="checkbox" value=0 />36.<a class="mech">Do you enjoy watching movies,television shows and other forms of media and analyzing their messages and themes?</a>'    +'<br/>'
+            //Psychology
+            +'<input class="check" id="check82" onClick={test82()} type="checkbox" value=0 />37.<a class="mech">Have you ever found yourself analyzing other peoples behaviors or trying to figure out their motivations?</a>'    +'<br/>'
+            +'<input class="check" id="check83" onClick={test83()} type="checkbox" value=0 />38.<a class="mech">Do you find yourself interested in studying emotions, personality traits, or mental disorders?</a>'    +'<br/>'
+            +'<input class="check" id="check84" onClick={test84()} type="checkbox" value=0 />39.<a class="mech">Are you curious about the relationship between the mind and the brain, and how they influence each other?</a>'    +'<br/>'
+            //Bachelors in Political Science
+            +'<input class="check" id="check85" onClick={test85()} type="checkbox" value=0 />40.<a class="mech">Have you ever been involved in a student organization or group that focus on political or social issues? </a>'    +'<br/>'
+            +'<input class="check" id="check86" onClick={test86()} type="checkbox" value=0 />41.<a class="mech">Have you ever taken interest in learning about the government structures?</a>'    +'<br/>'
+            +'<input class="check" id="check87" onClick={test87()} type="checkbox" value=0 />42.<a class="mech">Are you curious about how issues impact on both domestically and internationally?</a>'    +'<br/>'
+            //Bachelors in animation
+            +'<input class="check" id="check88" onClick={test88()} type="checkbox" value=0 />43.<a class="mech">Do you enjoy creating your own characters or stories?</a>'    +'<br/>'
+            +'<input class="check" id="check89" onClick={test89()} type="checkbox" value=0 />44.<a class="mech">Are you drawn to visual arts such as painting, drawing, or sculpting?</a>'    +'<br/>'
+            +'<input class="check" id="check90" onClick={test90()} type="checkbox" value=0 />45.<a class="mech">Do you enjoy storytelling and exploring different narrative techniques?</a>'    +'<br/>'
+            //Submit
+            + '<button class="submit" onClick={tesart()}> Submit</button>'    
+        )
     }
     else if(input=="Assesment Starts Engineering!!!"){
         return(
@@ -289,6 +364,7 @@ const courseLink = `<a href='${course}'>${course}</a>`;
         +'<input class="check"  id="check25" onClick={test25()} type="checkbox" value=0 />25.<a class="mech">We all are more cautionate about the dress.Do you ever thought of the fabrics?  </a>'                                                                                     +'</br/>'
         +'<input class="check"  id="check26" onClick={test26()} type="checkbox" value=0 />26.<a class="mech">Do you have any idea of creating new things?</a>'                                                                                                                        +'<br/>'
         +'<input class="check"  id="check27" onClick={test27()} type="checkbox" value=0 />27.<a class="mech">Have you combined colours to produce a different shade? </a>'                                                                                                            +'<br/>'
+       
         +'<input class="check" id="check28" onClick={test28()} type="checkbox" value=0 />28.<a class="mech">You have perception about a matter happening around but your friend has a different perspective and different opinion. Will you consider his/her opinion? </a>' +'<br/>'
         +'<input class="check" id="check29" onClick={test29()} type="checkbox" value=0 />29.<a class="mech">Friends are the choosen family. Consider that you and your gang are planning for a trip to Manali. Will be the organise the trip? </a>'+'<t/>'                           +'<br/>'
         +'<input class="check" id="check30" onClick={test30()} type="checkbox" value=0 />30.<a class="mech">Can you think and decide a immediate decision in a hectic situation?</a>' +'<br/>'
@@ -312,8 +388,7 @@ const courseLink = `<a href='${course}'>${course}</a>`;
         +'<input class="check" id="check43" onClick={test43()} type="checkbox" value=0 />43.<a class="mech">Have you ever been fascinated by the idea of turning a digital model into a physical object?</a>'    +'<br/>'
         +'<input class="check" id="check44" onClick={test44()} type="checkbox" value=0 />44.<a class="mech">Do you ever thought about the 3D printing works and its manufacturing process?</a>'    +'<br/>'
         +'<input class="check" id="check45" onClick={test45()} type="checkbox" value=0 />45.<a class="mech">Have you ever wanted to learn more about the advancements in 3D printing technology?</a>'    +'<br/>'
-
-//Submit
+        //Submit
         + '<button class="submit" onClick={tes()}> Submit</button>')
     }else if(input=="Are you ok"){
         return 'yes'
@@ -321,9 +396,497 @@ const courseLink = `<a href='${course}'>${course}</a>`;
         else {
         return "Try asking something else!";
     }
-  
-
 }
+//engg
+function test46(){
+    let nums1=document.getElementById("check46");
+    
+    if(nums1.checked == true){
+        document.getElementById("check46").value =1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check46").value = 0;
+    }
+}
+
+// second checkbox
+function test47(){
+    let nums1=document.getElementById("check47");
+ 
+    if(nums1.checked == true){
+        document.getElementById("check47").value =1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check47").value = 0;
+    }
+}
+//third checkbox
+function test48(){
+    let nums1=document.getElementById("check48");
+  
+    if(nums1.checked == true){
+        document.getElementById("check48").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check48").value = 0;
+    }
+}
+//fourth checkbox
+function test49(){
+    let nums1=document.getElementById("check49");
+   
+    if(nums1.checked == true){
+        document.getElementById("check49").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check49").value = 0;
+    }
+}//fivth checkbox
+function test50(){
+    let nums1=document.getElementById("check50");
+    
+    if(nums1.checked == true){
+        document.getElementById("check50").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check50").value = 0;
+    }
+}//sixth checkbox
+function test51(){
+    let nums1=document.getElementById("check51");
+  
+    if(nums1.checked == true){
+        document.getElementById("check51").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check51").value = 0;
+    }
+}//seventh checkbox
+function test52(){
+    let nums1=document.getElementById("check52");
+
+    if(nums1.checked == true){
+        document.getElementById("check52").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check52").value = 0;
+    }
+}//eigth checkbox
+function test53(){
+    let nums1=document.getElementById("check53");
+   
+    if(nums1.checked == true){
+        document.getElementById("check53").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check53").value = 0;
+    }
+}//ninth checkbox
+function test54(){
+    let nums1=document.getElementById("check54");
+
+    if(nums1.checked == true){
+        document.getElementById("check54").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check54").value = 0;
+    }
+}//tenth checkbox
+function test55(){
+    let nums1=document.getElementById("check55");
+  
+    if(nums1.checked == true){
+        document.getElementById("check55").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check55").value = 0;
+    }
+}
+//leven
+function test56(){
+    let nums1=document.getElementById("check56");
+  
+    if(nums1.checked == true){
+        document.getElementById("check56").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check56").value = 0;
+    }
+}
+//tweleve
+function test57(){
+    let nums1=document.getElementById("check57");
+  
+    if(nums1.checked == true){
+        document.getElementById("check57").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check57").value = 0;
+    }
+}
+//tweleve
+function test58(){
+    let nums1=document.getElementById("check58");
+  
+    if(nums1.checked == true){
+        document.getElementById("check58").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check58").value = 0;
+    }
+}
+//tweleve
+function test59(){
+    let nums1=document.getElementById("check59");
+  
+    if(nums1.checked == true){
+        document.getElementById("check59").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check59").value = 0;
+    }
+}
+//tweleve
+function test60(){
+    let nums1=document.getElementById("check60");
+  
+    if(nums1.checked == true){
+        document.getElementById("check60").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check60").value = 0;
+    }
+}
+//tweleve
+function test61(){
+    let nums1=document.getElementById("check61");
+  
+    if(nums1.checked == true){
+        document.getElementById("check61").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check61").value = 0;
+    }
+}
+//tweleve
+function test62(){
+    let nums1=document.getElementById("check62");
+  
+    if(nums1.checked == true){
+        document.getElementById("check62").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check62").value = 0;
+    }
+}
+//tweleve
+function test63(){
+    let nums1=document.getElementById("check63");
+  
+    if(nums1.checked == true){
+        document.getElementById("check63").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check63").value = 0;
+    }
+}
+//tweleve
+function test64(){
+    let nums1=document.getElementById("check64");
+  
+    if(nums1.checked == true){
+        document.getElementById("check64").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check64").value = 0;
+    }
+}
+//tweleve
+function test65(){
+    let nums1=document.getElementById("check65");
+  
+    if(nums1.checked == true){
+        document.getElementById("check65").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check65").value = 0;
+    }
+}//tweleve
+function test66(){
+    let nums1=document.getElementById("check66");
+  
+    if(nums1.checked == true){
+        document.getElementById("check66").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check66").value = 0;
+    }
+}
+//twenty two
+function test67(){
+    let nums1=document.getElementById("check67");
+  
+    if(nums1.checked == true){
+        document.getElementById("check67").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check67").value = 0;
+    }
+}
+//twenty three
+function test68(){
+    let nums1=document.getElementById("check68");
+  
+    if(nums1.checked == true){
+        document.getElementById("check68").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check68").value = 0;
+    }
+}
+//twenty four
+function test69(){
+    let nums1=document.getElementById("check69");
+  
+    if(nums1.checked == true){
+        document.getElementById("check69").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check69").value = 0;
+    }
+}
+//twenty five
+function test70(){
+    let nums1=document.getElementById("check70");
+  
+    if(nums1.checked == true){
+        document.getElementById("check70").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check70").value = 0;
+    }
+}
+//twenty three
+function test71(){
+    let nums1=document.getElementById("check71");
+  
+    if(nums1.checked == true){
+        document.getElementById("check71").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check71").value = 0;
+    }
+}
+//twenty three
+function test72(){
+    let nums1=document.getElementById("check72");
+  
+    if(nums1.checked == true){
+        document.getElementById("check72").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check72").value = 0;
+    }
+}
+//twenty three
+function test73(){
+    let nums1=document.getElementById("check73");
+  
+    if(nums1.checked == true){
+        document.getElementById("check73").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check73").value = 0;
+    }
+}//twenty three
+function test74(){
+    let nums1=document.getElementById("check74");
+  
+    if(nums1.checked == true){
+        document.getElementById("check74").value = 1;
+}
+else if(nums1.checked== false){
+       document.getElementById("check74").value = 0;
+    }
+}//twenty three
+function test75(){
+    let nums1=document.getElementById("check75");
+  
+    if(nums1.checked == true){
+        document.getElementById("check75").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check75").value = 0;
+    }
+}
+//31
+function test76(){
+    let nums1=document.getElementById("check76");
+  
+    if(nums1.checked == true){
+        document.getElementById("check76").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check76").value = 0;
+    }
+}
+//32
+function test77(){
+    let nums1=document.getElementById("check77");
+  
+    if(nums1.checked == true){
+        document.getElementById("check77").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check77").value = 0;
+    }
+}
+//33
+function test78(){
+    let nums1=document.getElementById("check78");
+  
+    if(nums1.checked == true){
+        document.getElementById("check78").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check78").value = 0;
+    }
+}
+//34
+function test79(){
+    let nums1=document.getElementById("check79");
+  
+    if(nums1.checked == true){
+        document.getElementById("check79").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check79").value = 0;
+    }
+}
+//35
+function test80(){
+    let nums1=document.getElementById("check80");
+  
+    if(nums1.checked == true){
+        document.getElementById("check80").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check80").value = 0;
+    }
+}
+//36
+function test81(){
+    let nums1=document.getElementById("check81");
+  
+    if(nums1.checked == true){
+        document.getElementById("check81").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check81").value = 0;
+    }
+}
+//37
+function test82(){
+    let nums1=document.getElementById("check82");
+  
+    if(nums1.checked == true){
+        document.getElementById("check82").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check82").value = 0;
+    }
+}
+//38
+function test83(){
+    let nums1=document.getElementById("check83");
+  
+    if(nums1.checked == true){
+        document.getElementById("check83").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check83").value = 0;
+    }
+}
+//39
+function test84(){
+    let nums1=document.getElementById("check84");
+  
+    if(nums1.checked == true){
+        document.getElementById("check84").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check84").value = 0;
+    }
+}
+//40
+function test85(){
+    let nums1=document.getElementById("check85");
+  
+    if(nums1.checked == true){
+        document.getElementById("check85").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check85").value = 0;
+    }
+}
+//41
+function test86(){
+    let nums1=document.getElementById("check86");
+  
+    if(nums1.checked == true){
+        document.getElementById("check86").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check86").value = 0;
+    }
+}
+//42
+function test87(){
+    let nums1=document.getElementById("check87");
+  
+    if(nums1.checked == true){
+        document.getElementById("check87").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check87").value = 0;
+    }
+}
+//43
+function test88(){
+    let nums1=document.getElementById("check88");
+  
+    if(nums1.checked == true){
+        document.getElementById("check88").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check88").value = 0;
+    }
+}
+//44
+function test89(){
+    let nums1=document.getElementById("check89");
+  
+    if(nums1.checked == true){
+        document.getElementById("check89").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check89").value = 0;
+    }
+}
+//45
+function test90(){
+    let nums1=document.getElementById("check90");
+  
+    if(nums1.checked == true){
+        document.getElementById("check90").value = 1 ;
+}
+else if(nums1.checked== false){
+       document.getElementById("check90").value = 0;
+    }
+}
+//
+//engineering
+//
 function test1(){
     let nums1=document.getElementById("check1");
     
@@ -810,6 +1373,8 @@ else if(nums1.checked== false){
        document.getElementById("check45").value = 0;
     }
 }
+
+
 //total
 function tes(){
     let checky=document.getElementById("check1").value;
@@ -893,32 +1458,13 @@ let arr=[{name:"ECE",marks:ECE},
 {name:"AI and Data Science",marks:Ai},
 {name:"3D Printing and Additive Manufracturing",marks:printing}
 ];
-let myArr=["ECE",
-"Fashion",
-"Civil",
-"EEE",
-"Chemical",
-"Mechanical",
-"CSc",
-"IT",
-"Textile",
-"Aeronautical"
-];
 
-// let max=Math.max.apply(Math,arr);
-const randomFunc = ()=>{
-    const mynum=Math.floor(Math.random() *(myArr.length-1));
-    console.log("mynum", mynum);
-    console.log(myArr[1]
-        );
-    const randomelement=myArr[mynum]
-    console.log("randomelement",randomelement);
-    return randomelement;
-    }
 let filtered = arr.filter((a)=>a.marks>=2)
 let filtered1 = arr.filter((a)=>a.marks==1)
 
-console.log("ECE"+ ECE,"Fashion"+ Fashion,"Civil"+ Civil,"EEE"+ EEE,"Chemical"+Chemical,"Mechanical"+mech,"CSC"+csc,"IT"+ IT, "Textile"+textile, "Aeronautial"+Aero);
+console.log("ECE"+ ECE,"Fashion"+ Fashion,"Civil"+ Civil,"EEE"
++ EEE,"Chemical"+Chemical,"Mechanical"+mech,"CSC"+csc,"IT"+ IT
+, "Textile"+textile, "Aeronautial"+Aero);
 console.log("filtered",filtered);
 let gee=filtered.map((b)=>{
     return(
@@ -932,6 +1478,107 @@ let ghee=filtered1.map((b)=>{
 })
 // console.log(gee);
 getval(gee,ghee)
+}
+//button for arts
+function tesart(){
+    let checky=document.getElementById("check46").value;
+    let checky1=document.getElementById("check47").value;
+    let checky2=document.getElementById("check48").value;   
+    let checky3=document.getElementById("check49").value;
+    let checky4=document.getElementById("check50").value;
+    let checky5=document.getElementById("check51").value;
+    let checky6=document.getElementById("check52").value;
+    let checky7=document.getElementById("check53").value;
+    let checky8=document.getElementById("check54").value;
+    let checky9=document.getElementById("check55").value;
+    let checky10=document.getElementById("check56").value;
+    let checky11=document.getElementById("check57").value;
+    let checky12=document.getElementById("check58").value;
+    let checky13=document.getElementById("check59").value;
+    let checky14=document.getElementById("check60").value;   
+    let checky15=document.getElementById("check61").value;
+    let checky16=document.getElementById("check62").value;
+    let checky17=document.getElementById("check63").value;
+    let checky18=document.getElementById("check64").value;
+    let checky19=document.getElementById("check65").value;
+    let checky20=document.getElementById("check66").value;
+    let checky21=document.getElementById("check67").value;
+    let checky22=document.getElementById("check68").value;
+    let checky23=document.getElementById("check69").value;
+    let checky24=document.getElementById("check70").value;
+    let checky25=document.getElementById("check71").value;
+    let checky26=document.getElementById("check72").value;
+    let checky27=document.getElementById("check73").value;
+    let checky28=document.getElementById("check74").value;
+    let checky29=document.getElementById("check75").value;
+    let checky30=document.getElementById("check76").value;
+    let checky31=document.getElementById("check77").value;
+    let checky32=document.getElementById("check78").value;   
+    let checky33=document.getElementById("check79").value;
+    let checky34=document.getElementById("check80").value;
+    let checky35=document.getElementById("check81").value;
+    let checky36=document.getElementById("check82").value;
+    let checky37=document.getElementById("check83").value;
+    let checky38=document.getElementById("check84").value;
+    let checky39=document.getElementById("check85").value;
+    let checky40=document.getElementById("check86").value;
+    let checky41=document.getElementById("check87").value;
+    let checky42=document.getElementById("check88").value;
+    let checky43=document.getElementById("check89").value;
+    let checky44=document.getElementById("check90").value;   
+    
+    
+    let sociology= Number(checky) + Number(checky1) + Number(checky2);
+    let economics= Number(checky3)+Number (checky4)+ Number(checky5);
+    let litreture= Number (checky6)+Number (checky7)+ Number(checky8)
+    let  design =Number (checky9) +Number(checky10)+Number(checky11)
+   let events=Number(checky12) + Number(checky13) + Number(checky14);
+   let fine=    Number  (checky15)+ Number(checky16) + Number(checky17);
+   let fashion=     Number (checky18)+Number (checky19) + Number(checky20);
+   let hotel =     Number(checky21) +Number(checky22)+Number(checky23) ;
+   let BA =  Number (checky24)+Number (checky25) +Number(checky26)
+   let law= Number(checky27)+ Number(checky28) +Number(checky29);
+   let journal=Number  (checky30)+ Number(checky31) + Number(checky32);
+   let massmed= Number (checky33)+Number (checky34) + Number(checky35);
+   let pshyco = Number(checky36) +Number(checky37)+Number(checky38) ;
+   let science =  Number (checky39)+Number (checky40) +Number(checky41)
+   let animation= Number(checky42)+ Number(checky43) +Number(checky44);
+
+   let arr=[{name:"Bachelor of Socialogy",marks:sociology},
+{name:"Bachelor of Economics",marks:economics},
+{name:"Bachelor of Literature",marks:litreture},
+{name:"Bachelors in Design",marks:design},
+{name:"Bachelors in Event Management",marks:events},
+{name:"Bachelors of fine arts",marks:fine},
+{name:"Bachelor in Fashion Designing",marks:fashion},
+{name:"Bachelor of Hotel Management",marks:hotel},
+{name:"Bachelor of Business Administration",marks:BA},
+{name:"Law Course",marks:law},
+{name:"Bachelor of Journalism and Mass Communication",marks:journal},
+{name:"Bachelor of Mass Media",marks:massmed},
+{name:"Psychology",marks:pshyco},
+{name:"Bachelor in Political Science",marks:science},
+{name:"Bachelor of Animation",marks:animation}
+];
+
+let filtered = arr.filter((a)=>a.marks>=2)
+let filtered1 = arr.filter((a)=>a.marks==1)
+
+// console.log("ECE"+ ECE,"Fashion"+ Fashion,"Civil"+ Civil,"EEE"+ EEE,"Chemical"+Chemical,"Mechanical"+mech,"CSC"+csc,"IT"+ IT, "Textile"+textile, "Aeronautial"+Aero);
+console.log("filtered",filtered);
+console.log("filtered1",filtered1);
+let gee=filtered.map((b)=>{
+    return(
+        b.name 
+    )
+})
+let ghee=filtered1.map((b)=>{
+    return(
+        b.name
+    )
+})
+// console.log(gee);
+getvalart(gee,ghee)
 }
 function engg()
 {
