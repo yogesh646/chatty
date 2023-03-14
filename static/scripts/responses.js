@@ -314,7 +314,7 @@ else if(input.includes("event")){
             ` VELS University: ${gellinkss}`+ '<br/>'+
             `  Hindustan Institute of Technology and Science : ${gellinksss}` )
 }
-else if(input.includes("arts")){
+else if(input.includes("fine arts")){
     let gels="https://www.governmentfineartscollege.com/"
     let gelss="https://stellamariscollege.edu.in/"
     let gelsss="https://www.mcc.edu.in/academic-departments/visual-communication/visual-communication/"

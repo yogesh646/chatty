@@ -20,11 +20,11 @@ for (let i = 0; i < coll.length; i++) {
 
     });
 }
-function gy(){
-   var docx=nlp("hello john");
-   console.log(docx.data())
-}
-gy()
+// function gy(){
+//    var docx=nlp("hello john");
+//    console.log(docx.data())
+// }
+// gy()
 
 function getTime() {
     let today = new Date();
