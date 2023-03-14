@@ -123,8 +123,8 @@ function getval(res,ghee) {
     // href='selection.html'
     alert(res);
     
-    let userHtml = '<p class="userText"><span >'+"<a class='intrest' >Intrested : </a>" 
-    + res +"<br/>"+"<br/>"+"<a class='intrest'> Below Intrested : </a>"+ ghee + 
+    let userHtml = '<p class="userText"><span >'+"<a class='intrest' >Interested : </a>" 
+    + res +"<br/>"+"<br/>"+"<a class='intrest'> Below Interested : </a>"+ ghee + 
     "<br/>"+"<br/>"+
     "<a class='submito'>Want to Continue with the Colleges?</a>"+'<br/>'
        +`<button class='submits' onClick="interest()"> Yes <button/>`+'<br/>'
@@ -141,8 +141,8 @@ function getvalart(res,ghee) {
     // href='selection.html'
     alert(res);
     
-    let userHtml = '<p class="userText"><span >'+"<a class='intrest' >Intrested : </a>" 
-    + res +"<br/>"+"<br/>"+"<a class='intrest'> Below Intrested : </a>"+ ghee + 
+    let userHtml = '<p class="userText"><span >'+"<a class='intrest' >Interested : </a>" 
+    + res +"<br/>"+"<br/>"+"<a class='intrest'> Below Interested : </a>"+ ghee + 
     "<br/>"+"<br/>"+
     "<a class='submito'>Want to Continue with the Colleges?</a>"+'<br/>'
        +`<button class='submits' onClick="interest()"> Yes <button/>`+'<br/>'

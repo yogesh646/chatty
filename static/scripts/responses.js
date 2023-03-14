@@ -9,7 +9,7 @@ function getBotResponse(input) {
     } else if (input == "scissors") {
         return "rock";
     }else if(input=='yes'){
-return "Please Type or Suggest or mention the College which I have mentioned above and see your Future Colleges !!! "
+return "Hope you are statsfied with the results, Select the department for which you want college suggestions."
     }else if(input.includes("bye")){
         return (
        
@@ -216,7 +216,7 @@ else if(input.includes("eee")||input.includes("electrical and electronics")){
     return (`National Institute of Technology, Tiruchirappalli : ${gellinks}`+'<br/>'+
     `Birla Institute of Technology and Science, Pilani: ${gellinkss}`+ '<br/>'+
     `Indian Institute of Information Technology, Allahabad : ${gellinksss}` )
-}else if(input.includes("fashion")||input.includes("fashion technology")){
+}else if(input.includes("ft")||input=="fashion technology"){
     let gels="https://bitsathy.ac.in/"
     let gelss="https://www.kct.ac.in/"
     let gelsss="https://www.psgtech.edu/"
@@ -257,7 +257,172 @@ else if(input.includes("eee")||input.includes("electrical and electronics")){
     `Sri Shakthi Institute of Engineering and Technology (SSIET), Coimbatore: ${gellinkss}`+ '<br/>'+
     `Nehru Institute of Engineering and Technology (NIET), Coimbatore : ${gellinksss}` )
 }
+//arts colleges display
+else if(input.includes("socialogy")){
+    let gels="https://www.loyolacollege.edu/"
+    let gelss="https://www.loyolacollege.edu/"
+    let gelsss="https://www.wcc.edu.in/"
+    const gellinks=`<a href='${gels}'>Loyola College, Chennai </a>`
+    const gellinkss=`<a href='${gelss}'> Madras Christian College, Chennai </a>`
+    const gellinksss=`<a href='${gelsss}'>Women's Christian College, Chennai</a>`
+    return (`Loyola  College, Chennai  : ${gellinks}`+'<br/>'+
+            `Madras  Christian College, Chennai : ${gellinkss}`+ '<br/>'+
+            `Women's Christian College, Chennai  : ${gellinksss}` )
+}
+else if(input.includes("economics")){
+    let gels="https://www.mse.ac.in/"
+    let gelss="http://www.psgcas.ac.in/https://www.loyolacollege.edu/"
+    let gelsss="https://stellamariscollege.edu.in/"
+    const gellinks=`<a href='${gels}'>Madras School of Economics (MSE)</a>`
+    const gellinkss=`<a href='${gelss}'> PSG College of Arts and Science  </a>`
+    const gellinksss=`<a href='${gelsss}'>Stella Maris College</a>`
+    return (`Madras School of Economics (MSE)  : ${gellinks}`+'<br/>'+
+            `Madras  Christian College, Chennai : ${gellinkss}`+ '<br/>'+
+            `Stella Maris College   : ${gellinksss}` )
+}
+else if(input.includes("literature")){
+    let gels="https://stellamariscollege.edu.in/"
+    let gelss="https://www.mcc.edu.in/"
+    let gelsss="https://www.psgcas.ac.in/"
+    const gellinks=`<a href='${gels}'>Stella Maris College</a>`
+    const gellinkss=`<a href='${gelss}'>Madras Christian College </a>`
+    const gellinksss=`<a href='${gelsss}'>PSG College of Arts and Science</a>`
+    return (`Stella Maris College  : ${gellinks}`+'<br/>'+
+            `Madras Christian College : ${gellinkss}`+ '<br/>'+
+            `PSG College of Arts and Science : ${gellinksss}` )
+}
+else if(input.includes("design")){
+    let gels="https://www.nift.ac.in/chennai/"
+    let gelss="http://www.iitg.ac.in/design/"
+    let gelsss="https://www.annauniv.edu/sap/"
+    const gellinks=`<a href='${gels}'>National Institute of Fashion Technology (NIFT), Chennai </a>`
+    const gellinkss=`<a href='${gelss}'>Department of Design, Indian Institute of Technology (IIT), Guwahati  </a>`
+    const gellinksss=`<a href='${gelsss}'>School of Architecture and Planning, Anna University, Chennai </a>`
+    return (` National Institute of Fashion Technology (NIFT), Chennai  : ${gellinks}`+'<br/>'+
+            ` Department of Design, Indian Institute of Technology (IIT), Guwahati : ${gellinkss}`+ '<br/>'+
+            ` School of Architecture and Planning, Anna University, Chennai   : ${gellinksss}` )
+}
 
+else if(input.includes("event")){
+    let gels="https://mopvc.edu.in/"
+    let gelss="https://www.velsuniv.ac.in/"
+    let gelsss="https://www.hindustanuniv.ac.in/"
+    const gellinks=`<a href='${gels}'>MOP Vaishnav College for Women</a>`
+    const gellinkss=`<a href='${gelss}'>VELS University </a>`
+    const gellinksss=`<a href='${gelsss}'>Hindustan Institute of Technology and Science</a>`
+    return (` MOP Vaishnav College for Women : ${gellinks}`+'<br/>'+
+            ` VELS University: ${gellinkss}`+ '<br/>'+
+            `  Hindustan Institute of Technology and Science : ${gellinksss}` )
+}
+else if(input.includes("arts")){
+    let gels="https://www.governmentfineartscollege.com/"
+    let gelss="https://stellamariscollege.edu.in/"
+    let gelsss="https://www.mcc.edu.in/academic-departments/visual-communication/visual-communication/"
+    const gellinks=`<a href='${gels}'>Government College of Fine Arts, Chennai </a>`
+    const gellinkss=`<a href='${gelss}'> Stella Maris College, Chennai </a>`
+    const gellinksss=`<a href='${gelsss}'>Madras Christian College, Chennai </a>`
+    return (` Government College of Fine Arts, Chennai  : ${gellinks}`+'<br/>'+
+            ` Stella Maris College, Chennai : ${gellinkss}`+ '<br/>'+
+            ` Madras Christian College, Chennai   : ${gellinksss}` )
+}
+else if(input.includes("designing")){
+    let gels="https://www.nift.ac.in/chennai/"
+    let gelss="https://wifd.in/"
+    let gelsss="https://www.psgcas.ac.in/"
+    const gellinks=`<a href='${gels}'>National Institute of Fashion Technology (NIFT) Chennai </a>`
+    const gellinkss=`<a href='${gelss}'>WIFD is a renowned college in Coimbatore, Tamil Nadu </a>`
+    const gellinksss=`<a href='${gelsss}'> PSG College of Arts and Science, located in Coimbatore, Tamil Nadu</a>`
+    return (` National Institute of Fashion Technology (NIFT) Chennai  : ${gellinks}`+'<br/>'+
+            `WIFD is a renowned college in Coimbatore, Tamil Nadu : ${gellinkss}`+ '<br/>'+
+            `   PSG College of Arts and Science, located in Coimbatore, Tamil Nadu : ${gellinksss}` )
+}
+else if(input.includes("hotel")){
+    let gels="https://www.ihmchennai.org/"
+    let gelss="https://www.srmihm.ac.in/"
+    let gelsss="https://www.mihmct.com/"
+    const gellinks=`<a href='${gels}'>Institute of Hotel Management Catering Technology and Applied Nutrition (IHMCTAN), Chennai </a>`
+    const gellinkss=`<a href='${gelss}'> SRM Institute of Hotel Management, Chennai </a>`
+    const gellinksss=`<a href='${gelsss}'>Madras Institute of Hotel Management and Catering Technology, Chennai </a>`
+    return (`Institute of Hotel Management Catering Technology and Applied Nutrition (IHMCTAN), Chennai : ${gellinks}`+'<br/>'+
+            `SRM Institute of Hotel Management, Chennai  : ${gellinkss}`+ '<br/>'+
+            ` Madras Institute of Hotel Management and Catering Technology, Chennai : ${gellinksss}` )
+}
+else if(input.includes("administration")){
+    let gels="https://psgcas.ac.in/"
+    let gelss="https://christuniversity.in/"
+    let gelsss="https://www.mcc.edu.in/"
+    const gellinks=`<a href='${gels}'>PSG College of Arts and Science, Coimbatore</a>`
+    const gellinkss=`<a href='${gelss}'> Christ University, Bangalore (satellite campus in Chennai)</a>`
+    const gellinksss=`<a href='${gelsss}'>Madras Christian College, Chennai</a>`
+    return (`PSG College of Arts and Science, Coimbatore  : ${gellinks}`+'<br/>'+
+            `Christ University, Bangalore (satellite campus in Chennai): ${gellinkss}`+ '<br/>'+
+            `Madras Christian College, Chennai: ${gellinksss}` )
+}
+else if(input.includes("law course")){
+    let gels="http://www.tndalu.ac.in/school-of-excellence-in-law.html"
+    let gelss="http://tn.gov.in/school/glcchennai/"
+    let gelsss="https://glccbe.ac.in/"
+    const gellinks=`<a href='${gels}'>School of Excellence in Law, The Tamil Nadu Dr. Ambedkar Law University, Chennai</a>`
+    const gellinkss=`<a href='${gelss}'>Dr. Ambedkar Government Law College, Chennai </a>`
+    const gellinksss=`<a href='${gelsss}'>Government Law College, Coimbatore</a>`
+    return (` School of Excellence in Law, The Tamil Nadu Dr. Ambedkar Law University, Chennai : ${gellinks}`+'<br/>'+
+            ` Dr. Ambedkar Government Law College, Chennai: ${gellinkss}`+ '<br/>'+
+            ` Government Law College, Coimbatore  : ${gellinksss}` )
+}
+else if(input.includes("journalism ")){
+    let gels="http://mopvc.edu.in/"
+    let gelss="https://www.mcc.edu.in"
+    let gelsss="http://www.psgcas.ac.in/"
+    const gellinks=`<a href='${gels}'>MOP Vaishnav College for Women, Chennai</a>`
+    const gellinkss=`<a href='${gelss}'>Madras Christian College, Chennai</a>`
+    const gellinksss=`<a href='${gelsss}'>PSG College of Arts and Science, Coimbatore</a>`
+    return (`MOP Vaishnav College for Women, Chennai  : ${gellinks}`+'<br/>'+
+            `Madras Christian College, Chennai : ${gellinkss}`+ '<br/>'+
+            ` PSG College of Arts and Science, Coimbatore  : ${gellinksss}` )
+}else if(input.includes("mass media")){
+    let gels="https://www.mcc.edu.in/"
+    let gelss="https://www.annauniv.edu/mds/"
+    let gelsss="https://www.srmist.edu.in/"
+    const gellinks=`<a href='${gels}'>Madras Christian College (MCC), Chennai</a>`
+    const gellinkss=`<a href='${gelss}'>Department of Media Sciences, Anna University, Chennai</a>`
+    const gellinksss=`<a href='${gelsss}'>SRM Institute of Science and Technology, Chennai </a>`
+    return (`Madras Christian College (MCC), Chennai  : ${gellinks}`+'<br/>'+
+            `Department of Media Sciences, Anna University, Chennai: ${gellinkss}`+ '<br/>'+
+            `SRM Institute of Science and Technology, Chennai : ${gellinksss}` )
+}
+else if(input.includes("psychology")){
+    let gels="https://www.wcc.edu.in/academics/under-graduate/psychology"
+    let gelss="https://www.mcc.edu.in/departments/psychology/overview"
+    let gelsss="https://www.psgcas.ac.in/departments/psychology/psychology.php"
+    const gellinks=`<a href='${gels}'>Women's Christian College (WCC), Chennai</a>`
+    const gellinkss=`<a href='${gelss}'>Madras Christian College (MCC), Chennai </a>`
+    const gellinksss=`<a href='${gelsss}'>PSG College of Arts and Science, Coimbatore</a>`
+    return (`Women's Christian College (WCC), Chennai : ${gellinks}`+'<br/>'+
+            `Madras Christian College (MCC), Chennai : ${gellinkss}`+ '<br/>'+
+            `PSG College of Arts and Science, Coimbatore  : ${gellinksss}` )
+}
+else if(input.includes("political")){
+    let gels="https://presidencycollegechennai.ac.in/"
+    let gelss="https://mcc.edu.in/"
+    let gelsss="https://www.stellamariscollege.edu.in/"
+    const gellinks=`<a href='${gels}'>Presidency College, Chennai</a>`
+    const gellinkss=`<a href='${gelss}'>Madras Christian College, Chennai</a>`
+    const gellinksss=`<a href='${gelsss}'>Stella Maris College, Chennai</a>`
+    return (`  Presidency College, Chennai: ${gellinks}`+'<br/>'+
+            `Madras Christian College, Chennai: ${gellinkss}`+ '<br/>'+
+            `Stella Maris College, Chennai: ${gellinksss}` )
+}
+else if(input.includes("animation")){
+    let gels="https://www.dsls.ac.in/bsc-animation"
+    let gelss="https://www.image.edu.in/b-sc-animation-and-vfx/"
+    let gelsss="https://www.drmgrdu.ac.in/course/b-sc-animation-and-multimedia-technology.aspx"
+    const gellinks=`<a href='${gels}'>Dhanalakshmi Srinivasan College of Arts and Science (Coimbatore)</a>`
+    const gellinkss=`<a href='${gelss}'>Image College of Arts, Animation & Technology (Chennai)</a>`
+    const gellinksss=`<a href='${gelsss}'>Dr. M.G.R. Educational and Research Institute (Chennai)</a>`
+    return (`Dhanalakshmi Srinivasan College of Arts and Science (Coimbatore)  : ${gellinks}`+'<br/>'+
+            `Image College of Arts, Animation & Technology (Chennai): ${gellinkss}`+ '<br/>'+
+            `Dr. M.G.R. Educational and Research Institute (Chennai): ${gellinksss}` )
+}
 
     else if(input=="yogeshwaran"){
         return "Porambokku"
