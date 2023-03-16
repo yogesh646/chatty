@@ -34,6 +34,172 @@ return(
         var docy=nlp(input)
         return ( docy.values().toOrdinal().out('text') );
     }
+    //
+    //who made you?, who is your boss , master,founder?
+
+    //Bye , goodbye, see you later
+    if(input.includes("bye") || input.includes("good bye")|| input.includes("see you later")){
+   
+        const arr=[
+            {name:"See you",id:0}
+        ,{name:"Have a Nice day",id:1}
+        ,{name:"Bye! Come back again soon",id:2}
+        ,{name:"Bye! Come back again soon",id:3}
+        ,{name:"Bye! Come back again soon",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    //Thanks, Thank you, Thanks for helping me
+    if(input.includes("thanks") || input.includes("thank you")|| input.includes("thanks for helping me")){
+   
+        const arr=[{name:"Happy to help!",id:0}
+        ,{name:"Happy to help!",id:1}
+        ,{name:"Happy to help!",id:2}
+        ,{name:"Any time!",id:3}
+        ,{name:"My pleasure",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    //No answer
+    if(input.includes("no answer") || input.includes("no answer")|| input.includes("no answer")){
+   
+        const arr=[{name:"Sorry, can’t understand you",id:0}
+        ,{name:"Please give me more info",id:1}
+        ,{name:"Not sure I understand",id:2}
+        ,{name:"Not sure I understand",id:3}
+        ,{name:"Not sure I understand",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    //What can you do? , What help you provide?, how you could help me?
+    if(input.includes("what can you do") || input.includes("what help you provide")|| input.includes("how you could help me")){
+   
+        const arr=[{name:"I conduct a survey with a series of questions and guide you with suitable courses.",id:0}
+        ,{name:"By taking this assessment you will end up with a suitable course.",id:1}
+        ,{name:"On finishing this assessment you will get a knowledge about the course that suits you",id:2}
+        ,{name:"On finishing this assessment you will get a knowledge about the course that suits you",id:3}
+        ,{name:"On finishing this assessment you will get a knowledge about the course that suits you",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    if(input.includes("haha") || input.includes("lol")|| input.includes("that's funny")){
+   
+        const arr=[{name:"Hehe",id:0}
+        ,{name:"Glad I could make you laugh!",id:1}
+        ,{name:"Glad I could make you laugh!",id:2}
+        ,{name:"Fun fun!",id:3}
+        ,{name:"Fun fun!",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    if(input.includes("you are dumb") || input.includes("shut up")|| input.includes("shut up")){
+   
+        const arr=[{name:"Hurting me!",id:0}
+        ,{name:"Hurting me!",id:1}
+        ,{name:"Well that hurts:(",id:2}
+        ,{name:"Well that hurts:(",id:3}
+        ,{name:"Well that hurts:(",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    if(input.includes("what are you doing") || input.includes("what are you upto")){
+   
+        const arr=[{name:"Talking to you, of course!",id:0}
+        ,{name:"Talking to you, of course!",id:1}
+        ,{name:"I can talk!",id:2}
+        ,{name:"I can Respond",id:3}
+        ,{name:"I can Respond",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    if(input.includes("yes") || input.includes("yep")||input.includes("good")){
+   
+        const arr=[{name:"Yeah",id:0}
+        ,{name:"Yeah",id:1}
+        ,{name:"Good",id:2}
+        ,{name:"Ok",id:3}
+        ,{name:"Ok",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    // You are awesome, You are the best, You are good
+    if(input.includes("you are awesome") || input.includes("you are the best")||input.includes("you are good")){
+   
+        const arr=[{name:"Thank you",id:0}
+        ,{name:"Thank you",id:1}
+        ,{name:"Nice to hear!",id:2}
+        ,{name:"Thank you for your words.",id:3}
+        ,{name:"Thank you for your words.",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    if(input.includes("nope") || input.includes("no")||input.includes("nope")){
+   
+        const arr=[{name:"Ok",id:0}
+        ,{name:"Ok",id:1}
+        ,{name:"ok",id:2}
+        ,{name:"Ok",id:3}
+        ,{name:"Ok",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+      
+    if(input.includes("suggest") || input.includes("useless")||input.includes("suggestions")){
+   
+        const arr=[{name:"Please mail your suggestion to preethib2210@gmail.com. Thank you for helping me improve!",id:0}
+        ,{name:"Please mail your suggestion to preethib2210@gmail.com. Thank you for helping me improve!",id:1}
+        ,{name:"Please mail your suggestion to preethib2210@gmail.com. Thank you for helping me improve!",id:2}
+        ,{name:"Please mail your suggestion to preethib2210@gmail.com. Thank you for helping me improve!",id:3}
+        ,{name:"Please mail your suggestion to preethib2210@gmail.com. Thank you for helping me improve!",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    if(input.includes("what is your age") || input.includes("how old are you")||input.includes("age")){
+   
+        const arr=[{name:"I was made in 2023, if that’s what you are asking!",id:0}
+        ,{name:"I was made in 2023, if that’s what you are asking!",id:1}
+        ,{name:"I was made in 2023, if that’s what you are asking!",id:2}
+        ,{name:"I was born in the year 2023!",id:3}
+        ,{name:"I was born in the year 2023!",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
+    if(input.includes("what inspires you") || input.includes("inspiration")||input.includes("what motivated you")){
+   
+        const arr=[{name:"•	The major problem identified is that nowadays many students faces the problem of decision making in choosing their course. So I thought of bringing a solution for it.",id:0}
+        ,{name:"The major problem identified is that nowadays many students faces the problem of decision making in choosing their course. So I thought of bringing a solution for it.",id:1}
+        ,{name:"The major problem identified is that nowadays many students faces the problem of decision making in choosing their course. So I thought of bringing a solution for it.",id:2}
+        ,{name:"The major problem identified is that nowadays many students faces the problem of decision making in choosing their course. So I thought of bringing a solution for it.",id:3}
+        ,{name:"The major problem identified is that nowadays many students faces the problem of decision making in choosing their course. So I thought of bringing a solution for it.",id:4}];
+        const rob=Math.floor( Math.random()*4.14);
+        const fins=arr.filter(a=>a.id==rob)
+        
+            return (  fins.map((a)=>a.name)  )
+        }
     if(input.includes("who made you") || input.includes("boss")||input.includes("master")){
    
         const arr=[{name:"I was made by the end semester project by a team",id:0}
@@ -337,8 +503,8 @@ else if(input.includes("designing")){
             `   PSG College of Arts and Science, located in Coimbatore, Tamil Nadu : ${gellinksss}` )
 }
 else if(input.includes("hotel")){
-    let gels="https://www.ihmchennai.org/"
-    let gelss="https://www.srmihm.ac.in/"
+    let gels=  "https://www.ihmchennai.org/"
+    let gelss= "https://www.srmihm.ac.in/"
     let gelsss="https://www.mihmct.com/"
     const gellinks=`<a href='${gels}'>Institute of Hotel Management Catering Technology and Applied Nutrition (IHMCTAN), Chennai </a>`
     const gellinkss=`<a href='${gelss}'> SRM Institute of Hotel Management, Chennai </a>`
@@ -1618,7 +1784,7 @@ let arr=[{name:"ECE",marks:ECE},
 {name:"Textile",marks:textile},
 {name:"Aeronautical",marks:Aero},
 {name:"Marine",marks:marine},
-{name:"Bo medical",marks:biomedical},
+{name:"Bio medical",marks:biomedical},
 {name:"Aerospace",marks:aerospace},
 {name:"AI and Data Science",marks:Ai},
 {name:"3D Printing and Additive Manufracturing",marks:printing}
@@ -1699,7 +1865,7 @@ function tesart(){
     let  design =Number (checky9) +Number(checky10)+Number(checky11)
    let events=Number(checky12) + Number(checky13) + Number(checky14);
    let fine=    Number  (checky15)+ Number(checky16) + Number(checky17);
-   let fashion=     Number (checky18)+Number (checky19) + Number(checky20);
+   let fashion=  Number (checky18)+Number (checky19) + Number(checky20);
    let hotel =     Number(checky21) +Number(checky22)+Number(checky23) ;
    let BA =  Number (checky24)+Number (checky25) +Number(checky26)
    let law= Number(checky27)+ Number(checky28) +Number(checky29);
